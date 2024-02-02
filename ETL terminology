@@ -1,0 +1,24 @@
+Daily refersh vs Full load
+https://hevodata.com/learn/incremental-data-load-vs-full-load/
+
+Full load vs Delta Load
+https://community.sap.com/t5/technology-q-a/full-vs-delta-load/qaq-p/3723010
+
+https://www.montecarlodata.com/blog-data-quality-checks-in-etl/
+
+What i verified
+1) DDL verification
+2) data quality check -- 
+2.1 ) check for total number of records.
+2.2) check for sum and avg of numeric records.
+2.3) check for flags values/count.
+2.4) check for accepted issues like -- timestamp or date formatting issues. trailing or leading zeroes/spaces,special characters etc.
+2.5) verify no data loss at targated db.
+2.6) check for primary keys and constrains.
+
+process i used
+1.Read data from source location or db.
+2.Read transformed data from destination location or db.
+3.Identify the primary keys and drop the referential keys.
+4. on the basis of primary keys apply joins on both the databases using python,pyspark and sql and fetch the mismatched columns.
+5. Now analayse these mismatch columns for issues.
