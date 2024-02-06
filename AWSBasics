@@ -1,8 +1,11 @@
 AWS S3 and EC2--Abhishek verramalla
 AWS Cloud formation ---Arbind Mahato
 https://www.youtube.com/playlist?list=PL7foQG1Y7xk-hVhybQrhODchrOvtfY_bk
+https://cloud.in28minutes.com/aws-certification-devops-in-aws-cloudformation-vs-codepipeline-vs-opsworks
 
-Introduction to Cloudformation
+
+*******************************
+1. Introduction to Cloudformation
 ******************************
 What is AWS CloudFormation?
 ----------------------------
@@ -41,6 +44,27 @@ Before making changes to your resources, you can generate a change set, which is
 Change sets allow you to see how your changes might impact your running resources, especially critical resources, before implementing them. For example, if you change the name of an Amazon RDS database instance, CloudFormation will create a new database and delete the old one. You will lose the data in the old database unless you've already backed it up. If you generate a change set, you will see that your change will cause your database to be replaced, and you will be able to plan accordingly before you update your stack.
 Learn More: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
 
-AWS CDK and construct
+**************************************
+2. AWS CDK and construct
 **************************************
 https://www.youtube.com/watch?v=LU5VgGWO9zw
+
+**************************************
+3. AWS Codebuild
+**************************************
+Jenkins vs AWS Codebuild
+https://jenkinshero.com/jenkins-vs-aws-codebuild-for-building-docker-images/
+
+ What is codebuild?
+a ci service that compiles, executes and deploys (considered similar to Jenkins)
+https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html
+
+what is code commit--private repo service (similar to GitHub)
+
+what is a code pipeline?- A cd tool that is used to automate the release(similar to github actions)
+
+https://digital-alpha.com/comparison-between-aws-codebuild-and-aws-codepipeline/
+
+
+
+
