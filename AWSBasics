@@ -48,7 +48,13 @@ https://www.youtube.com/watch?v=t97jZch4lMY&list=PLEiEAq2VkUUKXeR-3MjkhbU4NOvF_s
 **************************************
 2. AWS CDK and construct
 **************************************
-https://www.youtube.com/watch?v=LU5VgGWO9zw
+1. https://www.youtube.com/watch?v=LU5VgGWO9zw
+2. https://www.youtube.com/watch?v=nlb8yo7SZ2I
+3. https://www.youtube.com/watch?v=I_ftyDeHffE
+
+
+diff between cdk and lambda
+https://joelotepawembo.medium.com/difference-between-aws-cdk-lambda-and-serverless-lambda-34b2ce6abe5b
 
 **************************************
 3. AWS Codebuild
@@ -69,6 +75,7 @@ https://digital-alpha.com/comparison-between-aws-codebuild-and-aws-codepipeline/
 **************************************
 4. AWS Lambda
 **************************************
+used for infra provisioning using functions rather than manual.
 https://www.youtube.com/watch?v=97q30JjEq9Y
 
 
