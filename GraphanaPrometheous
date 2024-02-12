@@ -1,9 +1,16 @@
 high-level application architecture of a virtual global e-commerce service 
 ***************************************************************************
 https://scaleyourapp.com/web-service/
-https://www.youtube.com/watch?v=tZedFy3p0R8&list=PLTnw6NC76Hn7upiWa8xyEQ3lsJbRcF5Ou&index=4
-https://www.youtube.com/playlist?list=PLGyKZJoyKdOdx8Nt1G0rZYfYh8YnY9RPk
 
+*******************************YouTube Playlist****************************************************
+https://www.youtube.com/playlist?list=PLTnw6NC76Hn7upiWa8xyEQ3lsJbRcF5Ou (Hindi, very good explanation)
+https://www.youtube.com/playlist?list=PLVCgi5HZ0-Ytx5J5fp7A4HG5HreQ-7ZMg (Good for try by yourself)
+https://www.youtube.com/playlist?list=PLGyKZJoyKdOdx8Nt1G0rZYfYh8YnY9RPk (with github repo, already cooked code)
+************************************************************************************************************************
+
+     Text-based resources for setup
+https://www.linode.com/docs/guides/how-to-install-prometheus-and-grafana-on-ubuntu/
+https://antonputra.com/monitoring/install-prometheus-and-grafana-on-ubuntu/
 
 ******************************
 What are time series databases?
@@ -15,6 +22,7 @@ Prometheus vs Graphana
 1)https://www.zerok.ai/post/prometheus-vs-grafana-in-2023
 2)https://last9.io/blog/prometheus-and-grafana/
 3)https://prometheus.io/docs/tutorials/alerting_based_on_metrics/
+4)https://www.sumologic.com/blog/prometheus-vs-grafana/
 
 1. What is prometheus
 
@@ -28,3 +36,8 @@ We use Promql to show the status of one target at a particular time.
 2.Gauge--Record a value that goes up and down ex temp, memory usage
 3.History
 4.Summary
+
+
+**********************Uninstall Prometheus********************
+https://webhostinggeeks.com/howto/how-to-uninstall-prometheus-on-ubuntu/
+
