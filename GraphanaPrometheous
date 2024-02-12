@@ -1,6 +1,8 @@
 high-level application architecture of a virtual global e-commerce service 
 ***************************************************************************
 https://scaleyourapp.com/web-service/
+https://www.youtube.com/watch?v=tZedFy3p0R8&list=PLTnw6NC76Hn7upiWa8xyEQ3lsJbRcF5Ou&index=4
+https://www.youtube.com/playlist?list=PLGyKZJoyKdOdx8Nt1G0rZYfYh8YnY9RPk
 
 
 ******************************
@@ -14,3 +16,15 @@ Prometheus vs Graphana
 2)https://last9.io/blog/prometheus-and-grafana/
 3)https://prometheus.io/docs/tutorials/alerting_based_on_metrics/
 
+1. What is prometheus
+
+Prometheus is an open-source monitoring system, written in Go that collects metrics data and stores that data in a time series database.
+it is a pull-based tool. It collects metrics of the target system using HTTP, stores them locally or remotely and displays them back in the Prometheus server.
+Prometheus server then scrapes the metrics based on the time interval we defined and stores it in a time-series database.Prometheus.yaml file used for this.
+We use Promql to show the status of one target at a particular time.
+
+4 metrics type
+1.Countre--only inc or rest to zero.
+2.Gauge--Record a value that goes up and down ex temp, memory usage
+3.History
+4.Summary
