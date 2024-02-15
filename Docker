@@ -22,3 +22,24 @@ When you change the Dockerfile and rebuild the image, only those layers which ha
 
 7. What is container?
 A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.
+
+https://cloudchamp.notion.site/How-to-Install-Docker-on-Ubuntu-20-f6cda544c64f44ccb83443f8204b098e (follow this for installation)
+
+
+*******************************Docker commands******************************
+docker container create imagename (to create container from image)
+
+docker run -it imagename (pull the image if not already present)
+docker images (show images)
+docker container ls (show containers)
+docker container ls -a (show all containers even the stopped one)
+docker start containername
+docker stop containername
+docker exec -it containername bash (to attach the container with the terminal), ctrl+d to exit
+docker run -it -p localport:instanceport imagename (for port mapping)
+docker container prune(remove all stopped containers)
+
+how to create a docker image?
+1.create a docker file inside the project 
+2. docker build -t yourimagename .
+3. 
