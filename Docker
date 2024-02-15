@@ -1,0 +1,24 @@
+official doc
+https://docs.docker.com/get-started/overview/ (very Good)
+
+1. What is Docker?
+Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
+With Docker, you can manage your infrastructure in the same ways you manage your applications.
+
+2. What is docker registery?
+A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker looks for images on Docker Hub by default.
+
+3. Docker contains docker deamon(responsible for all the works) and docker client. Docker desktop contain both deamon and client.
+4. Docker architecture
+uses client-server architecture.
+The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface
+
+5. What is docker image
+An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization
+
+6. why images are lightweight in nature?
+To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image.
+When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt.
+
+7. What is container?
+A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.
