@@ -1,5 +1,7 @@
 official doc
 https://docs.docker.com/get-started/overview/ (very Good)
+https://www.youtube.com/watch?v=wHy0JNwrB9k&list=PL0tP8lerTbX20wQ4IVD7xTZKef_pYM6lR&index=4
+https://www.youtube.com/watch?v=31k6AtW-b3Y
 
 1. What is Docker?
 Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
@@ -50,5 +52,11 @@ Containers have networking enabled by default, and they can make outgoing connec
 
 docker network ls (to see available networks)
 
-why to create custome networks?
+9.why to create custome networks?
 You can create custom, user-defined networks, and connect multiple containers to the same network. Once connected to a user-defined network, containers can communicate with each other using container IP addresses or container names. 
+
+10. what is docker volume?
+When we delete a container then its data/memory also deleted.Tp prevent this we use docker volume.
+
+
+dockerfile ---> docker image --->conatiner1,container 2....
