@@ -43,3 +43,12 @@ how to create a docker image?
 1.create a docker file inside the project 
 2. docker build -t yourimagename .
 3. 
+
+
+8. what is docker networking?
+Containers have networking enabled by default, and they can make outgoing connections. We can create custom networks as well. By default network is bridge.
+
+docker network ls (to see available networks)
+
+why to create custome networks?
+You can create custom, user-defined networks, and connect multiple containers to the same network. Once connected to a user-defined network, containers can communicate with each other using container IP addresses or container names. 
