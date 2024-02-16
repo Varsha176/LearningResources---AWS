@@ -61,3 +61,6 @@ When we delete a container then its data/memory also deleted.Tp prevent this we 
 
 
 dockerfile ---> docker image --->conatiner1,container 2....
+
+how to resolve permission error in docker?
+sudo chown $USER /var/run/docker.sock
