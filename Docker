@@ -45,7 +45,8 @@ docker container prune(remove all stopped containers)
 how to create a docker image?
 1.create a docker file inside the project 
 2. docker build -t yourimagename .
-3. 
+how to create container from this docker image
+docker run -d -p 8000:8000 nodeproject-docker (in detached mode)
 
 
 8. what is docker networking?
