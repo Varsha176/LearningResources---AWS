@@ -9,7 +9,7 @@ https://www.youtube.com/playlist?list=PLGyKZJoyKdOdx8Nt1G0rZYfYh8YnY9RPk (with g
 ************************************************************************************************************************
 
      Text-based resources for setup
-https://www.linode.com/docs/guides/how-to-install-prometheus-and-grafana-on-ubuntu/
+https://www.linode.com/docs/guides/how-to-install-prometheus-and-grafana-on-ubuntu/ (Used successfully)
 https://antonputra.com/monitoring/install-prometheus-and-grafana-on-ubuntu/
 
 ******************************
@@ -32,10 +32,12 @@ Prometheus server then scrapes the metrics based on the time interval we defined
 We use Promql to show the status of one target at a particular time.
 
 4 metrics type
-1.Countre--only inc or rest to zero.
-2.Gauge--Record a value that goes up and down ex temp, memory usage
+1.Counter--only inc or rest to zero.Use cases for counter include request count, tasks completed, and error count.
+2.Gauge--Record a value that goes up and down ex temp, memory usage.rate() function can not be used with this.
 3.History
 4.Summary
+https://www.tigera.io/learn/guides/prometheus-monitoring/prometheus-metrics/
+https://www.timescale.com/blog/four-types-prometheus-metrics-to-collect/ 
 
 
 **********************Uninstall Prometheus********************
