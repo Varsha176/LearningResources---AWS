@@ -23,4 +23,9 @@ Workshop
 https://catalog.workshops.aws/well-architected-reliability/en-US/4-failure-management/4-test/30-testing-for-resiliency-of-ec2-rds-and-s3
 
 simple walkthrough by cloning this repo
-https://github.com/chaostoolkit/chaostoolkit-documentation-code/tree/master/tutorials/a-simple-walkthrough
+https://github.com/chaostoolkit/chaostoolkit-documentation-code/tree/master/tutorials/a-simple-walkthroughchaos
+
+chaos testing for kubernetics
+https://www.educative.io/blog/chaos-engineering-process-principles
+sample example yaml files
+https://github.com/vfarcic/go-demo-8/tree/master/chaos
