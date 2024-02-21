@@ -1,0 +1,16 @@
+What is service mesh
+
+A service mesh is a dedicated infrastructure layer built into an application that controls service-to-service communication in a microservices architecture.
+It controls the delivery of service requests to other services, performs load balancing, encrypts data, and discovers other services.
+
+https://www.dynatrace.com/news/blog/what-is-a-service-mesh/
+https://www.youtube.com/watch?v=16fgzklcF7Y&t=830s
+
+kubernetics vs istio
+https://thenewstack.io/why-do-you-need-istio-when-you-already-have-kubernetes/
+
+why do i need istio if i have load balancer?
+When in-cluster services communicate, a load balancer called kube-proxy forwards requests to service pods at random. You can use Istio to add more complex load balancing methods, enabled by Envoy. 
+Envoy supports multiple load balancing methods, including random, round-robin, and least request.
+
+https://tetrate.io/blog/what-is-istio-and-why-does-kubernetes-need-it/
