@@ -1,60 +1,73 @@
+***************************************************
 The Developer Support plan allows only email creation of support tickets and does not provide phone support.
 The Basic Support plan provides customer support for non-technical issues, such as increases in service quotas. However, the Basic Support plan does not provide technical support.
 The Business Support plan is the minimum plan that provides on call support feature.
 
+***************************************************
 Trusted Advisor checks security groups for rules that allow unrestricted access to a resource. Unrestricted access increases opportunities for malicious activity, such as hacking, denial-of-service attacks, or loss of data. 
 AWS Config continuously monitors and records changes to your AWS resources, but it does not identify security groups that allow unrestricted access.
 CloudWatch is a monitoring service that collects and tracks metrics for AWS resources. It does not identify security groups that allow unrestricted access.
 CloudTrail provides an audit record of API calls. It does not identify security groups that allow unrestricted access.
 
+***************************************************
 Client VPN is a managed client-based VPN service that gives you the ability to securely access your AWS resources and the resources in your on-premises network.
 With Client VPN, you can access your resources from any location through an OpenVPN-based VPN client. You would use Client VPN to connect individual laptops to AWS, not an entire data center.
 Amazon Connect is an omnichannel cloud contact center that helps you provide superior customer service at a lower cost. Amazon Connect provides a seamless experience across voice and chat for your customers and agents. Amazon Connect is not a service that connects an on-premises network to AWS.
 AWS Direct Connect is consistent and private because your company is the only user of the cable.A company wants to establish a consistent and private connection from the company's on-premises data center to the AWS Cloud then direct connect is the option.
 Site-to-Site VPN creates an encrypted network path between your on-premises network and your AWS Cloud network. This connection uses the internet, so you cannot expect consistency. Even though the traffic is encrypted, the connection is not private because the internet is a shared resource.
 
+***************************************************
 Programmatic access requires an access key ID and a secret access key that can be assigned to an AWS user.
 A user ID is used for IAM security credentials, but not for programmatic access.
 
+***************************************************
 AWS DMS can be used to migrate data from an on-premises database to a database in AWS. However, AWS DMS does not migrate the actual server to an EC2 instance.
 Migration Hub is a service that helps plan and track application migrations. Migration Hub does not perform system migrations.
 AWS MGN is an automated lift-and-shift solution. This solution can migrate physical servers and any databases or applications that run on them to EC2 instances in AWS.
 Application Discovery Service collects information about the usage and configuration of on-premises servers to help plan a migration to AWS. Application Discovery Service does not actually perform migration operations.
 
+***************************************************
 Global Accelerator is a networking service that improves the performance of your users’ network traffic by up to 60%. Global Accelerator uses the AWS global network infrastructure. Global Accelerator is not a relational database.
 DynamoDB is a fully managed NoSQL database service. DynamoDB provides fast and predictable performance with seamless scalability. However, DynamoDB is not a relational database.
  Aurora is a MySQL- and PostgreSQL-compatible relational database built for the cloud. Aurora combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.
 Amazon EBS is an easy-to-use, high-performance block-storage service. You can use Amazon EBS with Amazon EC2 for both throughput- and transaction-intensive workloads at any scale.
 You can run a database on Amazon EC2 instances and use Amazon EBS for the storage for that database. However, Amazon EBS by itself is not a relational database.
 
+***************************************************
 Elastic Beanstalk is a service to deploy and scale web applications and services developed with common programming languages on automatically deployed infrastructure with capacity management, load balancing, auto scaling, and monitoring. Elastic Beanstalk makes it easier to provision and support an application. Elastic Beanstalk does not reduce website latency.
 DAX is used to reduce response times from a DynamoDB table from single-digit milliseconds to microseconds. DynamoDB tables cannot host static websites.
 Route 53 is a highly available and scalable DNS web service. The three main functions of Route 53 are registering domain names, routing internet traffic to the resources for your domain, and checking the health of those resources. Route 53 can direct traffic to S3 buckets. But because the question describes only one S3 bucket, Route 53 would have only one potential route and could not reduce latency.
  CloudFront is a web service that speeds up the distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. Content is cached in edge locations. Content that is repeatedly accessed can be served from the edge locations instead of the source S3 bucket.
 
+***************************************************
  Reserved Instances reserve some capacity for your use at any time. Reserved Instances can sometimes give you a discount. However, this capacity is not unused capacity.
 On-Demand Instances are the default purchase option and are immediately available. On-Demand Instances are not discounted.
 Dedicated Instances run in VPCs on hardware dedicated to that individual customer and are often used when there are licensing or compliance constraints. Dedicated Instances are not discounted.
 With Spot Instances, you can access unused EC2 capacity. Spot Instances can be discounted.
 
+***************************************************
 Amazon S3 is not a global file system. Amazon S3 is an durable object storage service.
 Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on Amazon EC2 instances. Amazon Inspector does not perform S3 data classification and automatic discovery.
 Macie is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
 GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads. GuardDuty does not perform S3 data classification.
 Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources. Secrets Manager does not perform S3 data classification and automatic discovery.
 
+***************************************************
 CloudFront is a content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to global customers with low latency and high transfer speeds.
 Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. Amazon Comprehend does not translate text.
 A load balancer accepts incoming traffic from clients and routes requests to its registered targets (such as EC2 instances) in one or more Availability Zones. However, a load balancer does not accept targets across Regions.
 
+***************************************************
 Amazon Transcribe is a service that uses machine learning to convert audio data to text.
 Amazon Polly is a machine learning service that converts text to speech. This service provides the ability to read text out loud.
  Amazon Textract is a machine learning service that can extract text from scanned documents.
 
-
+***************************************************
 CloudWatch monitors your AWS resources and the applications that you run on AWS in real time. You can use CloudWatch with AWS CloudTrail to monitor and receive alerts about console sign-in events that involve the AWS account root user.
 You can use AWS Config to assess, audit, and evaluate the configurations of your AWS resources. AWS Config cannot alert you about console sign-in events that involve the AWS account root user
 You can use Trusted Advisor for real-time guidance to help you provision your resources according to AWS best practices. Trusted Advisor cannot alert you about console sign-in events that involve the AWS account root user.
+
+https://explore.skillbuilder.aws/learn/mycourses
 
 
 
