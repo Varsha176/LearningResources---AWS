@@ -27,3 +27,12 @@ Servernode/Control plane components:
    2 --- Cube scheduler (recieves info from API server and then schedules the pod creation on diff nodes).
    3 --- etcd -- stores entire cluster info in form of key-value pair.
    4 --- Cloud container manager (not required for on-premise cluster, only required for running kubernatics on cloud platforms like aws,azure)
+
+Pod Vs Container
+*********************************
+1. Pod is the smallest deployable unit in Kubernetics. Pod can contain multiple containers.
+2. Kubernetics provide ip to pod not to the containers.(Kube-proxy responsible for assigning IP to pods).
+3. Containers within pods can share data volume but containers among diff pods cant share data volumes.
+4. pods can not communicate with each other.
+5. Kubernetcis alternative is docker-swarm.
+6. Kubernetics supports auto scaling & auto healing, which is not supported by docker-swarm.
