@@ -1,0 +1,7 @@
+Eden space vs Survival space? (Garbage collection)
+https://newrelic.com/blog/best-practices/java-garbage-collection
+https://medium.com/@khurshidbek-bakhromjonov/java-memory-management-understanding-the-jvm-heap-method-area-stack-24a4d4fa2363
+
+What is GC pressure?
+High GC pressure is the situation when garbage collection is performed too often and takes a significant amount of time. 
+Namely, when the time spent on garbage collection takes more than 30% of the overall execution time during some sample certain time interval
