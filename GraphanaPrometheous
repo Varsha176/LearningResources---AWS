@@ -60,4 +60,16 @@ https://www.youtube.com/playlist?list=PLyBW7UHmEXgylLwxdVbrBQJ-fJ_jMvh8h
 good resource 
 https://www.youtube.com/playlist?list=PLYiz2chG5MSFnyfigVs8yxhCBXpja6wJd
 
+***************************************************************************
+What is Failure rate?
+total number of requests failed per minute.
+
+total requests-- total number of requests served by a pod
+
+Latency + Processing Time = Response Time, for example:
+A package has been sent from A-B-C where A-B took 10 sec, B (processing) took 5 sec, B-C took 10 sec
+Latency = (10 + 10) sec = 20 sec
+Response time = (10 + 5 + 10) sec = 25 sec
+
+https://www.perfmatrix.com/latency-bandwidth-throughput-and-response-time/
 
