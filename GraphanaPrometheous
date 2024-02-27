@@ -79,7 +79,5 @@ InBound: It accepts the request and processing it. (Travelling towards)
 
 OutBound: when it hit the other 3rd party service.
 
-Replica set vs Deamen set
-https://sysdig.com/learn-cloud-native/kubernetes-101/kubernetes-replicasets-overview
-https://semaphoreci.com/blog/replicaset-statefulset-daemonset-deployments
+
 
