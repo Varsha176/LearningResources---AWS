@@ -36,3 +36,9 @@ Pod Vs Container
 4. pods can not communicate with each other.
 5. Kubernetcis alternative is docker-swarm.
 6. Kubernetics supports auto scaling & auto healing, which is not supported by docker-swarm.
+
+
+Replica set vs Deamen set
+*********************************
+https://sysdig.com/learn-cloud-native/kubernetes-101/kubernetes-replicasets-overview
+https://semaphoreci.com/blog/replicaset-statefulset-daemonset-deployments
