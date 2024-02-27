@@ -78,6 +78,18 @@ https://www.perfmatrix.com/latency-bandwidth-throughput-and-response-time/
 InBound: It accepts the request and processing it. (Travelling towards)
 
 OutBound: when it hit the other 3rd party service.
+***************************************************************************
+microservice spring boot metrics
+1.java buffer pool --Java applications use memory to store data temporarily as it is being processed in the buffer pool memory space, which is used to store data structures such as buffers and caches. 
+These structures are essential for improving the application’s performance, as they allow the application to temporarily store data, reducing the number of I/O operations required.
+
+2.java compilation metrics - The total time in seconds taken for class compilation
+3.JvmGarbageCollectorMetrics -Time spent in a given JVM garbage collector in seconds
+4.JvmMemoryMetrics - 
+5.JvmRuntimeInfoMetric - jvm_runtime info
+6.JvmThreadsMetrics -
+7.ProcessMetrics -Total user and system CPU time spent in seconds.
+
 
 
 
