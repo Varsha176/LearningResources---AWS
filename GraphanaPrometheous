@@ -61,6 +61,8 @@ good resource
 https://www.youtube.com/playlist?list=PLYiz2chG5MSFnyfigVs8yxhCBXpja6wJd
 
 ***************************************************************************
+Terminology used in Dashboards
+
 What is Failure rate?
 total number of requests failed per minute.
 
@@ -72,4 +74,11 @@ Latency = (10 + 10) sec = 20 sec
 Response time = (10 + 5 + 10) sec = 25 sec
 
 https://www.perfmatrix.com/latency-bandwidth-throughput-and-response-time/
+
+InBound: It accepts the request and processing it. (Travelling towards)
+
+OutBound: when it hit the other 3rd party service.
+
+Replica set vs Deamen set
+https://sysdig.com/learn-cloud-native/kubernetes-101/kubernetes-replicasets-overview
 
