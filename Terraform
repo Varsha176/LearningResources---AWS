@@ -8,3 +8,4 @@ terraform vs cloudformation
  CloudFormation is developed by AWS and only manages AWS resources. Terraform is developed by HashiCorp and can manage resources across a wide range of cloud vendors.
 
 https://www.youtube.com/playlist?list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm (best)
+https://www.youtube.com/watch?v=yRcf_vrp3v4 (terraform using CDK)
