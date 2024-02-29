@@ -90,6 +90,10 @@ These structures are essential for improving the application’s performance, as
 6.JvmThreadsMetrics -
 7.ProcessMetrics -Total user and system CPU time spent in seconds.
 
+*******************************************************************************
+Grafana Alerting Basics
+https://www.metricfire.com/blog/grafana-alerting/
+
 
 
 
