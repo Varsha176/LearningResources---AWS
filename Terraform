@@ -1,0 +1,10 @@
+Terraform vs Ansible
+************************
+What is the difference between Terraform and Ansible? Terraform is an open-source platform designed to provision cloud infrastructure,
+while Ansible is an open-source configuration management tool focused on the configuration of that infrastructure.
+
+terraform vs cloudformation
+***************************
+ CloudFormation is developed by AWS and only manages AWS resources. Terraform is developed by HashiCorp and can manage resources across a wide range of cloud vendors.
+
+https://www.youtube.com/playlist?list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm (best)
