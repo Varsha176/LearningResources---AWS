@@ -1,0 +1,4 @@
+https://enlear.academy/aws-cdk-a-beginners-guide-with-examples-424c600ac409
+
+AWS CDK provides a library of constructs in many programming languages to easily automate AWS infrastructure.
+AWS CDK converts the code written in the supported programming languages to CloudFormation Script before executing them
