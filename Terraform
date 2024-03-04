@@ -9,3 +9,9 @@ terraform vs cloudformation
 
 https://www.youtube.com/playlist?list=PL6XT0grm_TfgdaAjTmLb4QedMCCMQHISm (best)
 https://www.youtube.com/watch?v=yRcf_vrp3v4 (terraform using CDK)
+
+terraform vs cdk
+***************************
+If you have only AWS in your environment, and the infra is small, CDK should be enough. Terraform is more suited for complex environments, and if you already use it as the IaC tool to manage other infrastructure.
+https://medium.com/@kansvignesh/aws-cdk-vs-terraform-738c39d91f7a
+https://www.nclouds.com/blog/aws-cdk-for-terraform/
