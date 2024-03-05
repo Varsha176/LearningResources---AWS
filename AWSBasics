@@ -2,6 +2,13 @@ AWS S3 and EC2--Abhishek verramalla
 AWS Cloud formation ---Arbind Mahato
 https://www.youtube.com/playlist?list=PL7foQG1Y7xk-hVhybQrhODchrOvtfY_bk
 https://cloud.in28minutes.com/aws-certification-devops-in-aws-cloudformation-vs-codepipeline-vs-opsworks
+*******************************
+EC2
+*******************************
+If EC2 is Terminated then the attached volume is also terminated, however, this behaviour can be changed in the advance setting option.
+A security group can be attached to multiple instances, similarly, an instance can have multiple security groups.
+
+https://aws.amazon.com/ec2/instance-types/
 
 
 *******************************
