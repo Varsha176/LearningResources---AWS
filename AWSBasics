@@ -10,6 +10,11 @@ A security group can be attached to multiple instances, similarly, an instance c
 
 https://aws.amazon.com/ec2/instance-types/
 
+***********************************
+IAM policies
+https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_ec2-start-stop-tags.html
+***********************************
+
 
 *******************************
 1. Introduction to Cloudformation
