@@ -1,0 +1,42 @@
+1. What is AWS lambda and how it is different from EC2?
+https://www.youtube.com/watch?v=e8Vh9-hsRBo (summary provided below)
+
+AWS Lambda and Amazon EC2 are both services provided by Amazon Web Services (AWS) for computing, but they serve different purposes and have different characteristics:
+
+AWS Lambda:
+
+AWS Lambda is a serverless compute service, meaning you don't have to provision or manage any servers.
+It allows you to run code in response to events, such as changes to data in Amazon S3 buckets, updates to DynamoDB tables, HTTP requests via API Gateway, or messages from SNS topics.
+You upload your code to Lambda, and it automatically scales to handle the incoming requests, running your code in response to those events.
+Lambda charges you based on the number of requests and the duration of your code execution, rather than by the hour or by the amount of compute resources provisioned.
+Advantage:
+Low maintenance 
+Easily integrate with other AWS services.
+Speed is very high.
+Disadvantage:
+Low flexibility
+High cost for no of requests, memory consumed and execution time. 
+
+Amazon EC2:
+Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the cloud. In other words, it allows you to rent virtual servers on which you have complete control.
+With EC2, you provision virtual machines (instances) with specified hardware configurations (e.g., CPU, memory, storage, and networking) and install the necessary software on them.
+EC2 instances can run any operating system and support a wide range of applications. They are suitable for running long-lived applications, services, or systems that require full control over the underlying infrastructure.
+Unlike Lambda, you are responsible for managing and scaling the EC2 instances, including tasks such as patching, monitoring, and scaling.
+In summary, AWS Lambda is a serverless compute service where you upload code and it automatically runs in response to events, while Amazon EC2 provides virtual servers that you can fully control and manage for running various types of applications and services. 
+The choice between Lambda and EC2 depends on factors such as the nature of your application, its scalability requirements, and your preference for managing infrastructure.
+Advantage:
+flexibility, auto-scaling is easy.
+Less costly
+Disadvantage:
+Managing CPU utilization and resources, security vulnerability(High Maintenance).
+Integration capabilities with other services.
+
+2. Demo for triggering lambda function from s3 bucket.
+https://www.youtube.com/watch?v=3Ar1ABlD_Vs
+
+3. Create a rest API with api gateway and lambda.
+https://www.youtube.com/watch?v=jgpRAiar2LQ
+
+4. Real-world project using lambda
+
+
