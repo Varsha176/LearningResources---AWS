@@ -58,4 +58,11 @@ Function timeout-15 minute.
 Function layers-5
 DDOS attacks - 5 minutes.
 
+7.AWS Lambda Role
+Every Lambda function has an IAM role called an execution role. OTHER roles can be created and attached to policy.
+
+For example AWSLambdaBasicExecutionRole-send logs to cloudwatch
+AmazonS3ObjectLambdaExecutionRolePolicy
+Resource based policy used to give permission to other account or other aws services.
+
 
