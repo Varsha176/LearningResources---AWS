@@ -52,4 +52,10 @@ where event =An event in Lambda is a JSON formatted document that contains data 
 or the event object contains information about the event that caused the invocation.
 context=  This object provides methods and properties that provide information about the invocation, function, and execution environment.
 
+6. AWS Lambda limits?
+1,000 concurrent executions across all functions in an AWS Region.
+Function timeout-15 minute.
+Function layers-5
+DDOS attacks - 5 minutes.
+
 
