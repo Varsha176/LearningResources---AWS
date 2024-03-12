@@ -1,0 +1,17 @@
+1. What is Codebuild and how it is different from maven/gradle?
+AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
+Maven and Gradle are build automation tools.They manage project dependencies, compile source code, run tests, and package the application into distributable formats like JAR or WAR files.
+
+AWS CodeBuild: Build configuration is defined using a build specification file (buildspec.yml) or through the AWS Management Console. You can specify build commands, environment variables, and other settings in this file.
+Maven/Gradle: Build configuration is defined in build files (pom.xml for Maven, build.gradle for Gradle). These files include project settings, dependencies, plugins, and tasks required for building the project.
+
+**In code pipeline 4 steps--1)SOURCE 2)BUILD 3)Execute 4)Deploy ----Build & execute done by code Build.
+
+Code build reads the buildspec.yaml file and then build the code.
+code build is similar to Jenkins in external world.
+
+
+2. What is code pipeline.How it is different from Jenkins Pipeline?
+AWS CodePipeline is a fully managed service provided by AWS. You don't need to provision or manage any infrastructure; AWS handles the management and scaling of the service.
+Jenkins Pipeline is an open-source automation server that needs to be installed and configured on your own infrastructure or a cloud-based VM.
+Jenkins Pipelines are defined using a Jenkinsfile and executed by Jenkins agents
