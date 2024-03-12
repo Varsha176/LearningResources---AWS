@@ -9,12 +9,15 @@ AWS Lambda is a serverless compute service, meaning you don't have to provision 
 It allows you to run code in response to events, such as changes to data in Amazon S3 buckets, updates to DynamoDB tables, HTTP requests via API Gateway, or messages from SNS topics.
 You upload your code to Lambda, and it automatically scales to handle the incoming requests, running your code in response to those events.
 Lambda charges you based on the number of requests and the duration of your code execution, rather than by the hour or by the amount of compute resources provisioned.
+*Each Lambda function runs in its own container. You can think every lambda function as a standalone docker container.
+*programming language support including Java, Go, PowerShell, Node.js, C#, Python, and Ruby code
 Advantage:
 Low maintenance 
 Easily integrate with other AWS services.
 Speed is very high.
 Disadvantage:
 Low flexibility
+The disk space (ephemeral) is limited to 512 MB. The maximum execution timeout for a function is 15 minutes
 High cost for no of requests, memory consumed and execution time. 
 
 Amazon EC2:
@@ -38,5 +41,15 @@ https://www.youtube.com/watch?v=3Ar1ABlD_Vs
 https://www.youtube.com/watch?v=jgpRAiar2LQ
 
 4. Real-world project using lambda
+https://medium.com/@vasanthabalaji/aws-lambda-cdd242074177 
+
+5. Syntax(node.js)
+
+export const handler = async (event, context) => {
+}
+
+where event =An event in Lambda is a JSON formatted document that contains data for your function to process.
+or the event object contains information about the event that caused the invocation.
+context=  This object provides methods and properties that provide information about the invocation, function, and execution environment.
 
 
