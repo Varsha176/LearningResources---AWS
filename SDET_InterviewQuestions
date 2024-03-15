@@ -2,3 +2,5 @@
 2. How do you handle the situation if a feature is impacated after latest release.
 3. String str1 ='abcabtacymar';
 Str arr[] =['cat','babay','ram','xyz'] then find out if string of array present in string1, print yes or no for all strings.also handle the case if character duplicate.
+Test Plan vs Test strategy.
+How do you do RCA if your test suite working fine initailly but now 80% tc fails
