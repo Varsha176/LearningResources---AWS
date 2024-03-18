@@ -1,0 +1,24 @@
+*************************************
+1. IAM Policy Generator
+
+https://awspolicygen.s3.amazonaws.com/policygen.html
+
+2. How to generate multiple accounts for different environment like (dev,stage,qa,prod)
+Ans : Use AWS organizations service.
+
+3. 4 components of IAM
+User, User-Group, Policy & Role.
+Afer creating user, attach policy to it or Create User-group (Dev/qa),add users to it and attach policy to user-group.
+
+4. How many type of policies and what is the difference.
+1. AWS-Managed policies
+2. Customer managerd policies
+3. Inline policies ---Inline policies are policies that are directly attached to a single user, group, or role.
+
+4. What are IAM Roles?
+-IAM roles are a secure way to grant permissions to entities you trust.Roles are not associated with specific users or groups; instead, they are assumed by entities when needed.
+
+-Temporary Permissions: Roles are often used to grant temporary permissions to entities. For example, an AWS Lambda function might assume a role to access other AWS services for a limited time during execution.
+-Cross-Account Access: Roles can be used to grant access across AWS accounts. This is useful for scenarios where resources in one account need to interact with resources in another account.
+-Federation: Roles can be used for federated access, allowing users who are authenticated by an external identity provider (such as Active Directory or an OAuth provider) to assume roles in AWS.
+-Trust Policies: Roles have trust policies attached to them, which define which entities are allowed to assume the role.
