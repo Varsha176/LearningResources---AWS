@@ -1,0 +1,7 @@
+Question: AWS how to setup VPC, Public, Private Subnet, NAT, Internet Gateway, Route Table
+https://www.youtube.com/watch?v=43tIX7901Gs&list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP&index=5
+
+
+Question: What is Internet Gateway?
+An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between your VPC and the internet.
+An internet gateway enables resources in your public subnets (such as EC2 instances) to connect to the internet if the resource has a public IPv4 address or an IPv6 address
