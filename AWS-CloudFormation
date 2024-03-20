@@ -1,28 +1,65 @@
 1. What is AWS CLI?
-
+**************************
 Ans: The AWS Command Line Interface (CLI) helps to manage the AWS services directly from the command line. It is also used to create and manage infra.
 
 2. What is Cloud Formation?
-
+**************************
 Ans: CloudFormation is a service that allows you to define and manage AWS infrastructure as code. You create templates using JSON or YAML syntax to describe the resources and their configurations that you want to provision on AWS.
 CloudFormation templates can be created and managed through the AWS Management Console, AWS CLI, or SDKs.
 
+3. Define the AWS CloudFormation concepts.
+****************************************************
+When you use AWS CloudFormation, you work with templates and stacks. You create templates to describe your AWS resources and their properties. 
+Whenever you create a stack, CloudFormation provisions the resources that are described in your template.
 
-3. How CLI is different from Cloud formation.
+4. What is the AWS Cloudformation Template?
+*******************************************************
+A CloudFormation template is a JSON or YAML formatted text file. 
+You can save these files with any extension, such as .json, .yaml, .template, or .txt. 
+CloudFormation uses these templates as blueprints for building your AWS resources. 
+For example, in a template, you can describe an Amazon EC2 instance, such as the instance type, the AMI ID, block device mappings, and its Amazon EC2 key pair name. 
+Whenever you create a stack, you also specify a template that CloudFormation uses to create whatever you described in the template.
+For example, if you created a stack with the following template, CloudFormation provisions an instance with an ami-0ff8a91507f77f867 AMI ID, t2.micro instance type, test key key pair name, and an Amazon EBS volume.
+
+5. What is AWS Cloudformation Stack?
+********************************************************************
+When you use CloudFormation, you manage related resources as a single unit called a stack. 
+You create, update, and delete a collection of resources by creating, updating, and deleting stacks. 
+All the resources in a stack are defined by the stack's CloudFormation template. 
+Suppose you created a template that includes an Auto Scaling group, Elastic Load Balancing load balancer, and an Amazon Relational Database Service (Amazon RDS) database instance. 
+To create those resources, you create a stack by submitting the template that you created, and CloudFormation provisions all those resources for you. 
+You can work with stacks by using the CloudFormation console, API, or AWS CLI.
+
+6. What is AWS Cloudformation Change sets?
+**************************************
+If you need to make changes to the running resources in a stack, you update the stack. 
+Before making changes to your resources, you can generate a change set, which is a summary of your proposed changes. 
+Change sets allow you to see how your changes might impact your running resources, especially critical resources, before implementing them.
+For example, if you change the name of an Amazon RDS database instance, CloudFormation will create a new database and delete the old one. You will lose the data in the old database unless you've already backed it up.
+If you generate a change set, you will see that your change will cause your database to be replaced, and you will be able to plan accordingly before you update your stack.
+
+******************************************************************************************************************
+Learn More:
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
+https://www.youtube.com/watch?v=t97jZch4lMY&list=PLEiEAq2VkUUKXeR-3MjkhbU4NOvF_s-4U&index=7
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html
+In cloud formation template only the resource section is mandatory.
+******************************************************************************************************************
+
+7. How CLI is different from Cloud formation.
+****************************************************************************
 * One of the strong benefits of CloudFormation is the automatic support for rolling back changes if anything fails while deploying a stack.
 * Updating infrastructure using CloudFormation is another benefit. Make the change in the template and update the stack.
 
-4. What is IAC?
+8. What is IAC?
+****************************************************************************
 Infrastructure as code (IaC) is an approach to managing and provisioning computing infrastructure through machine-readable definition files.
 Benefits: 
 * automation reduces manual errors, increases consistency, and speeds up the deployment process.
 * Version control track to changes over time, collaborate effectively and roll back to previous versions if needed.
 * Reproducibility and Scalability.
 
-5. What is the drift detection feature in Cloud formation?
+9. What is the drift detection feature in Cloud formation?
+****************************************************************************
 CFT acts as a middleman between the user and the cloud provider. It reads the instructions from the YAML/JSON file and converts it into API Calls. If there is any change
 in the configured infrastructure (intentional/accidental) then CFT can detect this drift by showing what has changed.
-
-6. CFT
-https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html
-In cloud formation template only the resource section is mandatory.
