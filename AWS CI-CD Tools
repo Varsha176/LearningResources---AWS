@@ -8,7 +8,7 @@ Maven/Gradle: Build configuration is defined in build files (pom.xml for Maven, 
 **In code pipeline 4 steps--1)SOURCE 2)BUILD 3)Execute 4)Deploy ----Build & execute done by code Build.
 
 Code build reads the buildspec.yaml file and then build the code.
-code build is similar to Jenkins in external world.
+code build is similar to Jenkins file in external world. Where we put all the stages like pre build,build,execution ,output etc.
 
 
 2. What is code pipeline.How it is different from Jenkins Pipeline?
