@@ -1,5 +1,14 @@
-Question: AWS how to setup VPC, Public, Private Subnet, NAT, Internet Gateway, Route Table
+Question: AWS how to set up VPC, Public, Private Subnet, NAT, Internet Gateway, Route Table
 https://www.youtube.com/watch?v=43tIX7901Gs&list=PL7iMyoQPMtAN4xl6oWzafqJebfay7K8KP&index=5  (Best for EC2)
+
+*******************************
+EC2
+*******************************
+If EC2 is Terminated then the attached volume is also terminated, however, this behaviour can be changed in the advance setting option.
+A security group can be attached to multiple instances, similarly, an instance can have multiple security groups.
+
+https://aws.amazon.com/ec2/instance-types/
+
 
 
 Question: What is Internet Gateway?
