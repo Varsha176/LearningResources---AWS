@@ -1,9 +1,13 @@
-*************************************
+**************************************************
 1. IAM Policy Generator
-
 https://awspolicygen.s3.amazonaws.com/policygen.html
+****************************************************
+*****************************************************
+IAM policies
+https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_ec2-start-stop-tags.html
+*********************************************************************************************************
 
-2. How to generate multiple accounts for different environment like (dev,stage,qa,prod)
+2. How to generate multiple accounts for different environments like (dev, stage,QA,prod)
 Ans : Use AWS organizations service.
 
 3. 4 components of IAM
