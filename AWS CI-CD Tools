@@ -1,4 +1,12 @@
+What is CI-CD
+************************************
+1. Continuous integration (CI) is practice that involves developers making small changes and checks to their code. Due to the scale of requirements and the number of steps involved, this process is automated to ensure that teams can build, test, and package their applications in a reliable and repeatable way.
+CI helps streamline code changes, thereby increasing time for developers to make changes and contribute to improved software.
+2. Continuous delivery (CD) is the automated delivery of completed code to environments like testing and development. CD provides an automated and consistent way for code to be delivered to these environments.
+3. Continuous deployment is the next step of continuous delivery. Every change that passes the automated tests is automatically placed in production, resulting in many production deployments.
+
 1. What is Codebuild and how it is different from maven/gradle?
+************************************************************************
 AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy.
 Maven and Gradle are build automation tools.They manage project dependencies, compile source code, run tests, and package the application into distributable formats like JAR or WAR files.
 
@@ -11,7 +19,8 @@ Code build reads the buildspec.yaml file and then build the code.
 code build is similar to Jenkins file in external world. Where we put all the stages like pre build,build,execution ,output etc.
 
 
-2. What is code pipeline.How it is different from Jenkins Pipeline?
+2. What is code pipeline. How it is different from Jenkins Pipeline?
+************************************************************************
 AWS CodePipeline is a fully managed service provided by AWS. You don't need to provision or manage any infrastructure; AWS handles the management and scaling of the service.
 Jenkins Pipeline is an open-source automation server that needs to be installed and configured on your own infrastructure or a cloud-based VM.
 Jenkins Pipelines are defined using a Jenkinsfile and executed by Jenkins agents
