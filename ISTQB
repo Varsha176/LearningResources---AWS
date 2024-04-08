@@ -1,0 +1,23 @@
+Absence-of-errors fallacy --If your software or system is unusable (or does not fulfill users' wishes) then it does not matter how many defects are found and fixed – it is still unusable.
+tests wear out --f the same tests are repeated many times, they become increasingly ineffective at detecting new defects. To overcome this effect, existing tests and test data may need to be modified and new tests written.
+
+whole team approach 
+********************
+the testers also work closely with developers and helps them to create the unit test cases. Testers help business representatives to create suitable acceptance tests.
+
+Informal reviews --they are not documented.
+Walkthrough: -- led by the authors,To achieve a common understanding and to gather feedback and To examine and discuss the validity of the proposed solutions.
+Technical review: -- less formal review,led by the trained moderator but can also be led by a technical expert,Defects are found by the experts.
+Inspection: -- most formal review type and led by the trained moderators.During inspection the documents are prepared and checked thoroughly by the reviewers before the meeting.
+           -- It involves peers to examine the product
+
+******************************
+3-Points Estimating technique
+*****************************
+Two popular formula:
+
+1. Triangular distribution:
+
+Triangular Distribution: E = (o + m + p ) / 3
+2. Beta Distribution (PERT): E = (o + 4m + p ) / 6
+where E is Estimate; o = optimistic estimate; p = pessimistic estimate; m = most likely estimate
