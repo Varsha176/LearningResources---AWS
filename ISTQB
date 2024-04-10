@@ -54,4 +54,32 @@ TDD is an example of the shift left approach.
 Early non-functional testing is an example of the shift left
 approach.
 
+************************** QA VS QC ***************************************
+QC is a product-oriented, corrective approach that focuses on those activities supporting the achievement
+of appropriate levels of quality. Testing is a major form of quality control, while others include formal
+methods (model checking and proof of correctness), simulation and prototyping.
+
+QA is a process-oriented, preventive approach that focuses on the implementation and improvement of
+processes. It works on the basis that if a good process is followed correctly, then it will generate a good
+product. QA applies to both the development and testing processes and is the responsibility of everyone
+on a project.
+
+
+************************** 7 Testing Principals ***************************************
+1. Testing shows the presence, not the absence of defects. 
+2. Exhaustive testing is impossible.
+3. Early testing saves time and money.
+4. Defects cluster together.
+5. Tests wear out.
+6. Testing is context-dependent. 
+7. Absence-of-defects fallacy. 
+
+****************************** Test Activities and Tasks ********************************
+Test planning, Test monitoring and control.
+Test analysis includes analyzing the test basis to identify testable features and to define and prioritize
+associated test conditions, together with the related risks and risk levels.
+Test design and test implementation -includes creating or acquiring the testware necessary for test execution,
+Test execution, Test completion
+
+
 
