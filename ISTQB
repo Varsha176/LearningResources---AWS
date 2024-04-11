@@ -109,6 +109,39 @@ Non-functional testing
 Black-box testing
 White-box testing 
 
+**************************************** Diff between system testing and system integration testing ****************
+System testing focuses on the overall behaviour and capabilities of an entire system or product.
+System integration testing focuses on testing the interfaces of the system under test and other
+systems and external services. For Example Zomato integration with google map. OPUS integration with oms billing system and integration with payment system.
+
+System integration testing can be of three types:
+1. Software-software : example amazon with payment gateways.
+2. Software - hardware : Billing system with physical payment devices. Another example is embeded devices/IOT devices.
+3. Hardware -hardware : Heavy machineries
+
+**************************************************************************************
+1) What is Test Basis?
+The test basis is the information needed in order to start the test analysis and create our Test Cases.
+https://tryqa.com/what-is-test-analysis-or-how-to-identify-the-test-conditions/
+
+Possible Test Basis are:
+________________________
+System Requirement Document (SRS)
+Functional Design Specification
+Technical Design Specification
+User Manual
+Use Cases
+Source Code
+Business Requirement Document (BRD)
+
+2) What are Test objects?
+Test object in software testing is the application or the system being tested.
+
+https://testsigma.com/blog/test-object/
+
+3) TDD VS ATDD
+TDD tests are focused on verifying the behaviour of individual units of code, while ATDD tests are focused on verifying that the software meets the needs and requirements of the users.
+TDD written by devs while ATDD written by dev/qa/stakeholder.(Consider TDD at unit testing level and ATDD at system testing level like selenium code).
 
 
 
