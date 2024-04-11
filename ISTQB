@@ -89,10 +89,10 @@ models (e.g., spiral model, prototyping), and incremental development models (e.
 TDD, ATDD and BDD are similar development approaches
 
 ************************************ Test Levels ***********************************************
-Component testing/Unit Testing
-Component Integration Testing/Unit Integration Testing 
+Component testing/Unit Testing/Module Testing
+Component Integration Testing/Unit Integration Testing -- testing between components within same module.
 System testing 
-System integration testing 
+System integration testing -testing of diff modules.
 Acceptance testing
 
 Test levels are distinguished by the following non-exhaustive list of attributes, to avoid overlapping of test
