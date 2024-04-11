@@ -81,5 +81,34 @@ associated test conditions, together with the related risks and risk levels.
 Test design and test implementation -includes creating or acquiring the testware necessary for test execution,
 Test execution, Test completion
 
+******************************** SDLC Models ***********************************************
+SDLC
+models include: sequential development models (e.g., waterfall model, V-model), iterative development
+models (e.g., spiral model, prototyping), and incremental development models (e.g., Unified Process).
+
+TDD, ATDD and BDD are similar development approaches
+
+************************************ Test Levels ***********************************************
+Component testing/Unit Testing
+Component Integration Testing/Unit Integration Testing 
+System testing 
+System integration testing 
+Acceptance testing
+
+Test levels are distinguished by the following non-exhaustive list of attributes, to avoid overlapping of test
+activities:
+• Test object
+• Test objectives
+• Test basis
+• Defects and failures
+• Approach and responsibilities
+
+************************************ Test Types ***********************************************
+Functional testing 
+Non-functional testing 
+Black-box testing
+White-box testing 
+
+
 
 
