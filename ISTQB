@@ -16,7 +16,7 @@ Inspection: -- most formal review type and led by the trained moderators.During 
 ******************************
 3-Points Estimating technique
 *****************************
-Two popular formula:
+Two popular formulas:
 
 1. Triangular distribution:
 
@@ -42,7 +42,7 @@ What is risk likelihood?
 Risk likelihood is the probability or frequency that a problem will occur, given the current conditions and assumptions. It can be measured in terms of percentage, ratio, frequency, or any other numerical scale. 
 The higher the likelihood, the more likely the problem is.
 
-Configure test environments & Report on achieved coverage is mainly tester work.
+Configuring test environments & Reporting on achieved coverage is mainly tester work.
 In ATDD, tests are created, based on acceptance criteria to drive the development of the
 related software.
 
@@ -92,7 +92,7 @@ TDD, ATDD and BDD are similar development approaches
 Component testing/Unit Testing/Module Testing
 Component Integration Testing/Unit Integration Testing -- testing between components within same module.
 System testing 
-System integration testing -testing of diff modules.
+System integration testing -testing of different modules.
 Acceptance testing
 
 Test levels are distinguished by the following non-exhaustive list of attributes, to avoid overlapping of test
@@ -161,6 +161,18 @@ Scope depends on 3 factors
 Maintenance testing is required in case of update/upgrade/migration and retirement.
 
 Update is minor enhancements on the existing features while upgrade is addition of new features.
+
+
+****************************** Reviews ******************************************
+1. Informal review
+2. Walkthrough -- led by the author
+3. Technical Review -- is performed by technically qualified reviewers and led by a moderator.
+4. Inspection -- Most formal type of review. In inspections, the author cannot act as the review leader or scribe.
+
+very imp point : The Evaluation of participants should never be the objective of a review.
+
+
+ 
 
 
 
