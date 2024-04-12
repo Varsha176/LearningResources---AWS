@@ -143,5 +143,27 @@ https://testsigma.com/blog/test-object/
 TDD tests are focused on verifying the behaviour of individual units of code, while ATDD tests are focused on verifying that the software meets the needs and requirements of the users.
 TDD written by devs while ATDD written by dev/qa/stakeholder.(Consider TDD at unit testing level and ATDD at system testing level like selenium code).
 
+4) Acceptence testing (UAT) not only limited to functional testing but also covers operational testing(installation/uninstallation),
+   Regulations, compliance etc.
+Acceptence testing has 2 sub levels:
+1. Alpha Testing -- done by internal users/stakeholders on preprod env.
+2. Beta Testing -- performed by real users on real env to get feedback.Its a pre-release event.
+
+****************************** Maintenance testing ***************************
+1. Corrective
+2. Adaptive
+Scope depends on 3 factors
+1. Degree of risk of the change.
+2. Size of the existing System.
+3. The size of the change.
+
+
+Maintenance testing is required in case of update/upgrade/migration and retirement.
+
+Update is minor enhancements on the existing features while upgrade is addition of new features.
+
+
+
+
 
 
