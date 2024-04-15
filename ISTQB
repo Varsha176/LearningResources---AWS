@@ -177,7 +177,7 @@ White-box test techniques (also known as structure-based techniques)
 Experience-based test techniques
 
 1. Equivalance partioning : Divides inputs into partitions/ranges/class where all the elements of perticular range are expected to behave same.
-    We take only 1 tc from each range.
+    We take only 1 tc from each range. (<,1/0-range,>)
 
  
 
