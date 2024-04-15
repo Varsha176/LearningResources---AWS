@@ -160,17 +160,24 @@ Scope depends on 3 factors
 
 Maintenance testing is required in case of update/upgrade/migration and retirement.
 
-Update is minor enhancements on the existing features while upgrade is addition of new features.
+The update is a minor enhancement on the existing features while an upgrade is the addition of new features.
 
 
 ****************************** Reviews ******************************************
-1. Informal review
-2. Walkthrough -- led by the author
+1. Informal review/Buddy Check --the objective is to detect anomalies.
+2. Walkthrough -- led by the author, evaluate quality.
 3. Technical Review -- is performed by technically qualified reviewers and led by a moderator.
 4. Inspection -- Most formal type of review. In inspections, the author cannot act as the review leader or scribe.
 
-very imp point : The Evaluation of participants should never be the objective of a review.
+very imp point: The Evaluation of participants should never be the objective of a review.
 
+******************************** Test Techniques *********************************
+Black-box test techniques (also known as specification-based techniques) 
+White-box test techniques (also known as structure-based techniques) 
+Experience-based test techniques
+
+1. Equivalance partioning : Divides inputs into partitions/ranges/class where all the elements of perticular range are expected to behave same.
+    We take only 1 tc from each range.
 
  
 
