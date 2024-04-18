@@ -200,6 +200,10 @@ Branch coverage = Number of branches executed by the test
                  Total number of branches in the code 
 
 Error guessing is known as fault attack.
+Exploratory testing is sometimes conducted using session-based testing to structure the testing
+
+statement cov = no of else +1
+
 
 
  
