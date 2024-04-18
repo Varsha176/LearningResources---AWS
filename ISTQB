@@ -199,10 +199,32 @@ Branch coverage = Number of branches executed by the test
 
                  Total number of branches in the code 
 
-Error guessing is known as fault attack.
+Error guessing is known as a fault attack.
 Exploratory testing is sometimes conducted using session-based testing to structure the testing
 
 statement cov = no of else +1
+
+
+***************************** Test Estimation technique *********************************************
+1. Estimation based on ratios: figures are collected from previous projects
+within the organization, which makes it possible to derive “standard” ratios for similar projects
+
+2. Extrapolation
+
+3. Wideband Delphi: experts make experience-based estimations. Each expert, in isolation, estimates the effort. The results are collected and if there are deviations that are
+out of range of the agreed-upon boundaries, the experts discuss their current estimates. Planning poker is a variant of this technique.
+
+4. Three-point estimation: three estimations are made by the experts: the most optimistic estimation (a), the most likely estimation (m) and the most pessimistic estimation (b). The
+final estimate (E) is their weighted arithmetic mean. In the most popular version of this technique, the
+estimate is calculated as E = (a + 4*m + b) / 6. 
+
+****************************** Test Case Prioritization ************************************************
+1. Risk-based prioritization
+2. Coverage-based prioritization
+3. Requirements-based prioritization
+
+
+
 
 
 
