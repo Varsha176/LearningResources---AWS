@@ -167,7 +167,7 @@ The update is a minor enhancement on the existing features while an upgrade is t
 1. Informal review/Buddy Check --the objective is to detect anomalies.
 2. Walkthrough -- led by the author, evaluate quality.
 3. Technical Review -- is performed by technically qualified reviewers and led by a moderator.
-4. Inspection -- Most formal type of review. In inspections, the author cannot act as the review leader or scribe.
+4. Inspection -- Most formal type of review. In inspections, the author cannot act as the review leader or scribe. Based on rules and checklist.
 
 very imp point: The Evaluation of participants should never be the objective of a review.
 
@@ -226,9 +226,19 @@ estimate is calculated as E = (a + 4*m + b) / 6.
 
 Risk likelihood (>0 ,<1)
 
-Testing quardents
+Testing quadrants
 https://www.geeksforgeeks.org/agile-testing-quadrants/
 
+************************************************************
+What is the test condition?
+A testable aspect of a component or system identified as basis of testing.
+    Or
+Test Condition in Software Testing is the specification that a tester must follow for testing a software application.
+
+
+****************************************************************************
+What is Test Charter?
+documentation of test activities in session based explorartory testing.
 
 
  
