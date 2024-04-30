@@ -166,7 +166,7 @@ The update is a minor enhancement on the existing features while an upgrade is t
 ****************************** Reviews ******************************************
 1. Informal review/Buddy Check --the objective is to detect anomalies.
 2. Walkthrough -- led by the author, evaluate quality.
-3. Technical Review -- is performed by technically qualified reviewers and led by a moderator.
+3. Technical Review -- is performed by technically qualified reviewers and led by a moderator. Known for peer reviews.
 4. Inspection -- Most formal type of review. In inspections, the author cannot act as the review leader or scribe. Based on rules and checklist.
 
 very imp point: The Evaluation of participants should never be the objective of a review.
@@ -245,6 +245,25 @@ What is test summary report?
 
 Test summary report include Test Objective, Areas Covered/not covered, testing Approach, Platform Details ,Defect report,
 
+*****************************************************************************
+High Level Design -- system Tests
+code stage - unit tests
+Low level design -- Integration tests
+Buisness req -Acceptence Tests
+
+* Test case,Test data, test design all derived from specifications
+* Req Analysis is not the phase of the fundamental test process.
+
+Phase 1 – Test Planning and Control. ...
+Phase 2 – Test Analysis and Design. ...
+Phase 3 – Test Implementation and Execution. ...
+Phase 4 – Evaluating Exit Criteria and Reporting. ...
+Phase 5 – Test Closure.
+
+Drivers are used in Bottom-Up Integration Testing.Drivers are known as Test harness and scaffolding.
+Stubs used in the Top-down integration Testing
+
+*Test specification creation is not the task of test lead/manager.
 
  
 
