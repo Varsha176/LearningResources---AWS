@@ -264,10 +264,17 @@ Drivers are used in Bottom-Up Integration Testing.Drivers are known as Test harn
 Stubs used in the Top-down integration Testing
 
 *Test specification creation is not the task of test lead/manager.
-
- 
-
-
+* Test case specification defines the expected results of test.
+* a MAJOR task of test implementation and execution is Reporting discrepancies as incidents.
+* What is the MAIN benefit of designing tests early in the life cycle? It helps prevent defects from being introduced into the code.
+* What is the purpose of exit criteria? To define when a test level is complete.
+* A defect arrival rate curve:Shows the number of newly discovered defects per unit time
+* Contract and regulation testing is a part of Acceptance testing.
+* A typical formal review process consists of six main steps: Planning • Kick-off • Preparation • Review meeting • Rework • Follow-up.
+* Maintenance releases and technical assistance centers are example of external failure.
+* Arc testing is known as branch testing.
+* The _Equivalence partitioning____ technique can be used to achieve input and output coverage.
+* 
 
 
 
