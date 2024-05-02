@@ -278,7 +278,9 @@ Stubs used in the Top-down integration Testing
 * A test procedure specification identifies all steps required to operate the system and exercise the specified test cases in order to implement the associated test design.
 * System Integration testing should be done after unit testing.
 * Verification Testing is known as Static Testing and it can be simply termed as checking whether we are developing the right product or not.
-*
+* Failure is _________ Incorrect program behaviour due to a fault in the program.
+* Defect Management process does not include "Deliverable base-lining".
+* Test matrix is a type of project status report.
 
 
 
