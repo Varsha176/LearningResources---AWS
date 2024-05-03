@@ -281,6 +281,15 @@ Stubs used in the Top-down integration Testing
 * Failure is _________ Incorrect program behaviour due to a fault in the program.
 * Defect Management process does not include "Deliverable base-lining".
 * Test matrix is a type of project status report.
+* Peer Reviews are also called as : Technical Review
+*  Compiling code is not a form of static analysis.
+* Cost of the reviews will not include tool support.
+* Deviation from expected result to actual result is failure.
+* Functional testing is mostly Validation techniques.
+* Reviewer should have technical and Business background.
+*  Informal Review is inexpensive.
+* Test procedure specification defines the sequence in which tests should be executed.
+
 
 
 
