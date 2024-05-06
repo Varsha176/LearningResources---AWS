@@ -290,6 +290,9 @@ Stubs used in the Top-down integration Testing
 *  Informal Review is inexpensive.
 * Test procedure specification defines the sequence in which tests should be executed.
 
+******************************************************************************************
+test closure activity includes --finalize and archiving, handover of testware. evaluate how testing went and analyse lessons.
+
 
 
 
