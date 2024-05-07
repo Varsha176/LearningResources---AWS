@@ -307,6 +307,20 @@ test completion activity, is likely to be a task performed by the test managemen
 focused on (business- or technology-facing).
 ** Risk level = Risk likelihood * Risk impact
 Then, Risk impact = Risk level / Risk likelihood
+*For every software development activity, there is a corresponding test activity
+*The testing quadrants group test levels, test types, activities,test techniques and work products in Agile software development. In this model, tests can be business facing or technology facing.
+* Risk monitoring is part of risk control, not risk analysis.
+Risk identification itself does not allow us to implement risk mitigation activities. The mitigating actions are defined during the risk control phase
+
+
+***********************************************************************************************************************************
+A. Test analysis - prioritized test conditions (4) (e.g., acceptance criteria), and defect reports for defects identified in the test basis
+B. Test design - prioritized test cases, test charters, coverage items (1), test data requirements, and test environment requirements
+C. Test implementation - test procedures, automated test scripts, test suites, test data, test execution schedule (3), and test
+environment elements such as stubs, drivers, simulators, and service virtualizations
+D. Test completion - test completion report, documented lessons learned, action items for improvement, and change requests (2) (as product backlog items)
+
+
 
 
 
