@@ -291,7 +291,24 @@ Stubs used in the Top-down integration Testing
 * Test procedure specification defines the sequence in which tests should be executed.
 
 ******************************************************************************************
-test closure activity includes --finalize and archiving, handover of testware. evaluate how testing went and analyse lessons.
+*test closure activity includes --finalize and archiving, handover of testware. evaluate how testing went and analyse lessons.
+*The test completion report is an output of the test completion activity.
+*Test cases - output of test design activity.
+*Documented sequences of test cases in execution order are the test procedures - output of test implementation activity.
+*Test implementation produces the following outputs: test procedures (iv),automated test scripts, test suites, test data (ii), test execution schedule,
+and test environment elements such as stubs, drivers, simulators, and service virtualizations.
+** The test management role primarily involves activities related to test planning, test monitoring and control, and test completion. Thus,creating the test completion report, which is the prime output from the
+test completion activity, is likely to be a task performed by the test management role.
+**The whole team approach promotes robust communication and collaboration between the team members.
+** Dynamic testing can identify some of the defects that can be found by static testing but not all of them.
+** Testing quadrants have nothing to do with describing the relationships between test levels and Testing quadrants cannot help in assessing any type of coverage
+* Testing quadrants is not a psychological model 
+* Testing quadrants allow managers and other stakeholders to understand the relationships between test types, the activities they support (team support or product critique), and the viewpoint they are
+focused on (business- or technology-facing).
+** Risk level = Risk likelihood * Risk impact
+Then, Risk impact = Risk level / Risk likelihood
+
+
 
 
 
