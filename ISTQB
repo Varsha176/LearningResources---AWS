@@ -319,6 +319,31 @@ B. Test design - prioritized test cases, test charters, coverage items (1), test
 C. Test implementation - test procedures, automated test scripts, test suites, test data, test execution schedule (3), and test
 environment elements such as stubs, drivers, simulators, and service virtualizations
 D. Test completion - test completion report, documented lessons learned, action items for improvement, and change requests (2) (as product backlog items)
+***********************************************************************************************************************************
+Chapter -1
+1-Verification vs Validation
+***************************
+Verification-- are we building the product right? it is static/white box testing and is performed before validation. It is about the process and standards.
+Validation -- are we building the right product? it is a black box/dynamic testing and all about the product.
+
+https://www.geeksforgeeks.org/differences-between-verification-and-validation/
+
+2- QA VS QC
+***************
+QA is a process-oriented preventive approach, qa can be applied to both dev and testing processes. Test results are used to get feedback.
+QC is a product-oriented corrective approach. Testing is part of QC. Test results are used here to fix defects
+
+Failures can also be caused by environmental conditions.
+
+Test analysis includes analyzing the test basis to identify testable features and to define and prioritize associated test conditions, together with the related risks and risk levels.
+
+Test design work products include (prioritized) test cases, test charters, coverage items, test data requirements and test environment requirements.
+
+Developers may lose a sense of responsibility for quality. Independent testers may be seen as a bottleneck or be blamed for delays in release.
+
+
+
+
 
 
 
