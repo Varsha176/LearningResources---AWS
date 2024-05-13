@@ -340,6 +340,8 @@ Test analysis includes analyzing the test basis to identify testable features an
 Test design work products include (prioritized) test cases, test charters, coverage items, test data requirements and test environment requirements.
 
 Developers may lose a sense of responsibility for quality. Independent testers may be seen as a bottleneck or be blamed for delays in release.
+Type of coverage in state transition testing -- all states coverage, valid transition coverage(0-switch coverage), all transitions coverage.
+All states coverage is weaker than valid transitions coverage, because it can typically be achieved without exercising all the transitions
 
 
 
