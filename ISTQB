@@ -345,6 +345,17 @@ Type of coverage in state transition testing -- all states coverage, valid trans
 All states coverage is weaker than valid transitions coverage, because it can typically be achieved without exercising all the transitions
 statement coverage can not test missing statements or false coverage.
 
+*********************************************************************************************************
+the correct behavior of the system - this is called an 'oracle' or a test oracle
+A decision table is sometimes also referred to as a 'cause-effect' table.
+
+Drawback of Statement Coverage:
+
+Cannot check the false condition.
+Different input values to check all the conditions.
+More than one test case may be required to cover all the paths with a coverage of 100%.
+
+
 
 
 
