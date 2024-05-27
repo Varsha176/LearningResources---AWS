@@ -1,4 +1,10 @@
 **************************************************************************************************************************
+Resources
+Beginner concepts: Raghav Pal YouTube channel.
+Hands-on practice: https://www.youtube.com/watch?v=rBeyHDKLVqM
+**************************************************************************************************************************
+
+
 1. What is Kubernetes
 Kubernetes is a container management tool that helps in automated deploying, scheduling, auto-scaling, load balancing, monitoring and bach execution of containerized applications.
 It is written in Go lang.
@@ -68,5 +74,8 @@ kubectl cluster-info --gives complete information about cluster.
 kubectl get nodes -- to show all nodes
 kubectl get pods 
 kubectl get services
+kubectl create deploment name --image = imagename
+kubectl rollout deployement deployment name
+kubectl scal deployment name --replicas=5
 
 
