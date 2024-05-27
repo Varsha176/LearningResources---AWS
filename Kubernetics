@@ -1,16 +1,30 @@
-1. what is docker and what is kubernatics?
-ans: Docker is a container platform while kubernatics is a container orchestration platform. 
+**************************************************************************************************************************
+1. What is Kubernetes
+Kubernetes is a container management tool that helps in automated deploying, scheduling, auto-scaling, load balancing, monitoring and bach execution of containerized applications.
+It is written in Go lang.
+
+2. what is docker and what is kubernatics?
+ans: Docker is a container platform while Kubernetes is a container orchestration platform. 
 Problems with docker:--
-1.1 Single Host nature
-In docker there is one host on which we install docker and create containers so containers can impact ecah other.
+1.1 Single Host Nature
+In docker, there is one host on which we install docker and create containers so containers can impact each other.
 1.2 Self healing is missing
 If any container is down then application is also down and there is no way to automatically up the container in docker.
 1.3 Auto scaling is missing
 
-How Kubernatics solved these problems?
-1.1 Kubernatics uses clusters (server node architecure) hence impacting container can be shifted to different node.
+How Kubernatics solve these problems?
+1.1 Kubernatics uses clusters (server node architecture) hence impacting containers can be shifted to different nodes.
 1.2 Auto healing is there.
-1.3 Auto scaling can be done using yaml file(manually) or using HPA(hORIZONtal pod autoscaler) 
+1.3 Auto scaling can be done using yaml file(manually) or using HPA(hORIZONtal pod autoscale) 
+
+3. What is the secret and config map in Kubernetes?
+A secret is a Kubernetes object used to store sensitive info like keys/tokens/passwords. Config map objects are used to store configuration information.
+Both are stored in a key-value datastore outside the pod. Max limit for secret is 1 MB.
+
+4. How is auto-scaling done in Kubernetes?
+Kubernetes supports horizontal Autoscaling. Replicas of pods can be created using a replication controller that reads the manifest file and creates replicas according to the numbers provided.
+replication controller makes sure that the number of pods always exists.
+Horizontal pod scaler(HPA) is another way of creating replica of pods. HPA monitors the cpu utilization and on the basis of that send the message to replication controller to create new pods.
 
 **************************************************************************************************************************
 Kubernetics arhicetecture
