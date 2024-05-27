@@ -31,16 +31,21 @@ Kubernetics arhicetecture
 
 Server node == control plane and worker node == data plane.
 Pods are similar to containers just have some more capabilities than containers.
-worker node/data plane has 3 components:
-  |----Container runtime (responsible for running the pod )
-  2----Kubectl (Responsible for checking if the pod is running or not(auto-healing))
-  3----kubeProxy (Responsible for assigning network to pods(like ip addresses,ports))
+worker node/data plane has 3 components:Can be any physical or virtual machine.
+  |----Container runtime (responsible for running the pod ), responsible for managing and running a container's lifecycle.
+  2----Kubectl (Responsible for checking if the pod is running or not(auto-healing)), runs on each worker node and communicates with the components of master node.
+  3----kubeProxy (Responsible for assigning network to pods(like ip addresses,ports)), responsible for maintaining and configuring network rules.
+kubectl and Kube proxy interact with api server of the master node.
 
 Servernode/Control plane components:
-   1 ---core component name as 'API server' which exposes the kubernatics cluster to external world , meaning take and process all the requests.
+   1 ---core component name as 'API server' which exposes the Kubernetes cluster to the external world, meaning takes and process all the requests.
    2 --- Cube scheduler (recieves info from API server and then schedules the pod creation on diff nodes).
    3 --- etcd -- stores entire cluster info in form of key-value pair.
-   4 --- Cloud container manager (not required for on-premise cluster, only required for running kubernatics on cloud platforms like aws,azure)
+   4 --- Controller manager has 2 parts
+4.1 Kube controller - responsible for overall health of the cluster, correct no of pods are running as per spec file.
+4.2 Cloud controller(not required for on-premise cluster, only required for running kubernatics on cloud platforms like aws,azure)
+
+Only api server communicates with the etcd data store. etcd datastore can be configured inside the master node or externally. 
 
 Pod Vs Container
 *********************************
@@ -56,3 +61,12 @@ Replica set vs Deamen set
 *********************************
 https://sysdig.com/learn-cloud-native/kubernetes-101/kubernetes-replicasets-overview
 https://semaphoreci.com/blog/replicaset-statefulset-daemonset-deployments
+******************************************************************************************************************************************************************************************************
+Basic kubectl commands
+
+kubectl cluster-info --gives complete information about cluster.
+kubectl get nodes -- to show all nodes
+kubectl get pods 
+kubectl get services
+
+
