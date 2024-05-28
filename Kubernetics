@@ -7,61 +7,64 @@ Advance - Abhishek Veramalla
 
 
 1. What is Kubernetes
-Kubernetes is a container management tool that helps in automated deploying, scheduling, auto-scaling, load balancing, monitoring and bach execution of containerized applications.
+Kubernetes is a container management tool that helps in automated deploying, scheduling, auto-scaling, load balancing, monitoring and batch execution of containerized applications.
 It is written in Go lang.
 
-2. what is docker and what is kubernatics?
+2. What is Containerization?
+Containerization is a software deployment process that bundles an application's code with all the files and libraries it needs to run on any infrastructure.
+
+2. what is docker and what is Kubernetes?
 ans: Docker is a container platform while Kubernetes is a container orchestration platform. 
 Problems with docker:--
 1.1 Single Host Nature
 In docker, there is one host on which we install docker and create containers so containers can impact each other.
-1.2 Self healing is missing
-If any container is down then application is also down and there is no way to automatically up the container in docker.
+1.2 Self-healing is missing
+If any container is down then the application is also down and there is no way to automatically up the container in docker.
 1.3 Auto scaling is missing
 
-How Kubernatics solve these problems?
+How does Kubernetes solve these problems?
 1.1 Kubernatics uses clusters (server node architecture) hence impacting containers can be shifted to different nodes.
 1.2 Auto healing is there.
-1.3 Auto scaling can be done using yaml file(manually) or using HPA(hORIZONtal pod autoscale) 
+1.3 Auto scaling can be done using YAML file(manually) or using HPA(hORIZONtal pod autoscale) 
 
 3. What is the secret and config map in Kubernetes?
 A secret is a Kubernetes object used to store sensitive info like keys/tokens/passwords. Config map objects are used to store configuration information.
-Both are stored in a key-value datastore outside the pod. Max limit for secret is 1 MB.
+Both are stored in a key-value datastore outside the pod. The maximum limit for the secret is 1 MB.
 
 4. How is auto-scaling done in Kubernetes?
 Kubernetes supports horizontal Autoscaling. Replicas of pods can be created using a replication controller that reads the manifest file and creates replicas according to the numbers provided.
 replication controller makes sure that the number of pods always exists.
-Horizontal pod scaler(HPA) is another way of creating replica of pods. HPA monitors the cpu utilization and on the basis of that send the message to replication controller to create new pods.
+Horizontal pod scaler(HPA) is another way of creating replicas of pods. HPA monitors the CPU utilization and on the basis of that sends the message to the replication controller to create new pods.
 
 **************************************************************************************************************************
-Kubernetics arhicetecture
+Kubernetes architecture
 
 Server node == control plane and worker node == data plane.
 Pods are similar to containers just have some more capabilities than containers.
-worker node/data plane has 3 components:Can be any physical or virtual machine.
+worker node/data plane has 3 components: It can be any physical or virtual machine.
   |----Container runtime (responsible for running the pod ), responsible for managing and running a container's lifecycle.
-  2----Kubectl (Responsible for checking if the pod is running or not(auto-healing)), runs on each worker node and communicates with the components of master node.
+  2----Kubectl (Responsible for checking if the pod is running or not(auto-healing)), runs on each worker node and communicates with the components of the master node.
   3----kubeProxy (Responsible for assigning network to pods(like ip addresses,ports)), responsible for maintaining and configuring network rules.
 kubectl and Kube proxy interact with api server of the master node.
 
 Servernode/Control plane components:
-   1 ---core component name as 'API server' which exposes the Kubernetes cluster to the external world, meaning takes and process all the requests.
-   2 --- Cube scheduler (recieves info from API server and then schedules the pod creation on diff nodes).
-   3 --- etcd -- stores entire cluster info in form of key-value pair.
-   4 --- Controller manager has 2 parts
-4.1 Kube controller - responsible for overall health of the cluster, correct no of pods are running as per spec file.
+   1 ---core component name as 'API server' which exposes the Kubernetes cluster to the external world, meaning it takes and processes all the requests.
+   2 --- Cube scheduler (receives info from API server and then schedules the pod creation on different nodes).
+   3 --- etcd -- stores entire cluster info in the form of key-value pair.
+   4 --- The controller manager has 2 parts
+4.1 Kube controller - responsible for the overall health of the cluster, correct no of pods are running as per the spec file.
 4.2 Cloud controller(not required for on-premise cluster, only required for running kubernatics on cloud platforms like aws,azure)
 
-Only api server communicates with the etcd data store. etcd datastore can be configured inside the master node or externally. 
+Only the api server communicates with the etcd data store. etcd datastore can be configured inside the master node or externally. 
 
 Pod Vs Container
 *********************************
-1. Pod is the smallest deployable unit in Kubernetics. Pod can contain multiple containers.
-2. Kubernetics provide ip to pod not to the containers.(Kube-proxy responsible for assigning IP to pods).
-3. Containers within pods can share data volume but containers among diff pods cant share data volumes.
+1. Pod is the smallest deployable unit in Kubernetics. The pod can contain multiple containers.
+2. Kubernetics provide IP to the pod not to the containers. (Kube-proxy responsible for assigning IP to pods).
+3. Containers within pods can share data volume but containers among different pods can't share data volumes.
 4. pods can not communicate with each other.
 5. Kubernetcis alternative is docker-swarm.
-6. Kubernetics supports auto scaling & auto healing, which is not supported by docker-swarm.
+6. Kubernetics supports auto-scaling & auto-healing, which is not supported by docker-swarm.
 
 
 Replica set vs Deamen set
@@ -76,7 +79,7 @@ kubectl get nodes -- to show all nodes
 kubectl get pods 
 kubectl get services
 kubectl create deploment name --image = imagename
-kubectl rollout deployement deployment name
-kubectl scal deployment name --replicas=5
+kubectl rollout deployment deployment name
+kubectl scale deployment name --replicas=5
 
 
