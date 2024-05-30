@@ -1,5 +1,5 @@
 *******************************************************************************************
-Resources : https://www.youtube.com/playlist?list=PLI4xy7phW54nbfjf7ZMnlEx1O5cHneigh
+Resources: https://www.youtube.com/playlist?list=PLI4xy7phW54nbfjf7ZMnlEx1O5cHneigh
 *******************************************************************************************
 1. What is a service mesh??
 A service mesh is a dedicated infrastructure layer built into an application that controls service-to-service communication in a microservices architecture.
@@ -8,33 +8,39 @@ It controls the delivery of service requests to other services, performs load ba
 https://www.dynatrace.com/news/blog/what-is-a-service-mesh/
 https://www.youtube.com/watch?v=16fgzklcF7Y&t=830s
 
-2. kubernetics vs istio
+2. Kubernetes vs istio
 https://thenewstack.io/why-do-you-need-istio-when-you-already-have-kubernetes/
+https://tetrate.io/blog/what-is-istio-and-why-does-kubernetes-need-it/
 
-why do I need istio if I have load balancer?
+why do I need istio if I have a load balancer?
 When in-cluster services communicate, a load balancer called kube-proxy forwards requests to service pods at random. You can use Istio to add more complex load balancing methods, enabled by Envoy. 
 Envoy supports multiple load balancing methods, including random, round-robin, and last request.
 
-https://tetrate.io/blog/what-is-istio-and-why-does-kubernetes-need-it/
+
 
 3 what is istio?
 Istio is an open-source service mesh that enables the communication between microservices. It helps in security, traffic management and observability.
 
 4. Istio architecture
-ISTIO comprises of data planes and control planes.
+ISTIO comprises data planes and control planes.
 
 Istio control plane is responsible for managing envoy proxies. control-plane comprises 3 components.
 1 - Pilot -- distribution routing rules and traffic configuration to the Envoy proxies.
-2. Citadel -- provides the mutual tls authentication between services.
+2. Citadel -- provides the mutual TLS authentication between services.
 3. Galley -- Enforces access control and collects telemetry data for monitoring.
 
 Istio data plane consists of Envoy proxies deployed as sidecars, running alongside application instances in Kubernetes pods.
 The Envoy proxies manage traffic for services on the system, including managing and controlling network communication between microservices.
 
 5. What is Istiod?
-Istiod converts high-level routing rules that control traffic behavior into Envoy-specific configurations, and propagates them to the sidecars at runtime
+Istiod converts high-level routing rules that control traffic behaviour into Envoy-specific configurations and propagates them to the sidecars at runtime
 
 6. What is a gateway?
 
-Ingress gateway-- An ingress gateway allows us to define entry points into the mesh that all incoming traffic flows through. Gateway objects are used to enable ingress gateway to receive traffic.
-Egress gateway --An egress gateways are exit points from the mesh 
+Ingress gateway-- An ingress gateway allows us to define entry points into the mesh that all incoming traffic flows through. Gateway objects are used to enable the ingress gateway to receive traffic.
+Egress gateway --An egress gateway are exit point from the mesh 
+
+7. What is envoy?
+Envoy is a high-performance, open-source proxy server designed for cloud-native applications. It is often used in conjunction with service mesh platforms like Istio to provide advanced traffic management, load balancing, and observability capabilities for microservices-based applications.
+
+
