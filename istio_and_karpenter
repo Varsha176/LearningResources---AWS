@@ -42,5 +42,12 @@ Egress gateway --An egress gateway are exit point from the mesh
 
 7. What is envoy?
 Envoy is a high-performance, open-source proxy server designed for cloud-native applications. It is often used in conjunction with service mesh platforms like Istio to provide advanced traffic management, load balancing, and observability capabilities for microservices-based applications.
+**************************************************************************************************************************************************************************************
+https://www.youtube.com/playlist?list=PL5aURjJ6mdUedh8rPBXJ5w_ogdD9PM0D7
 
+1. What is Karpenter?
+Karpenter is an open-source node auto scaler built for Kubernetes. Karpenter improves the efficiency and cost of running workloads on Kubernetes clusters by:
+Watching for un-schedulable pods, Provisioning nodes that meet the requirements of the pods, and Removing the nodes when the nodes are no longer needed.
+it automatically launches the appropriate worker node without node groups. CREATED by AWS.
+Uses nodepool yaml to define info like instance type, architecture, number of chores etc.
 
