@@ -36,6 +36,7 @@ The Envoy proxies manage traffic for services on the system, including managing 
 Istiod converts high-level routing rules that control traffic behaviour into Envoy-specific configurations and propagates them to the sidecars at runtime
 
 6. What is a gateway?
+A gateway is a piece of networking hardware or software used in telecommunications networks that allows data to flow from one discrete network to another
 
 Ingress gateway-- An ingress gateway allows us to define entry points into the mesh that all incoming traffic flows through. Gateway objects are used to enable the ingress gateway to receive traffic.
 Egress gateway --An egress gateway are exit point from the mesh 
