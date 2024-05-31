@@ -1,0 +1,19 @@
+DNS Working
+https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/
+https://www.geeksforgeeks.org/working-of-domain-name-system-dns-server/
+
+What is a load balancer?
+A load balancer is a device or service that distributes network traffic dynamically across resources—on-premises or cloud—to support an application.
+
+Types of load balancers- 2 generic types of load balances --application layer load balancers and transport layer load balancers.
+ALB (Application load balancer) is costly and there is latency involved. It intercepts your req.
+NLB(Networl load balancer) --low latency, high transmission of data. Ex game server, streaming platform. It does not intercept your req
+GWLB (Gateway load balancers)-- for VPN/firewalls --offers high security.
+
+which to choose?
+For applying advanced load balancing techniques use ALB, for security use GWLB, for sticky sessions use NLB.
+
+What are sticky sessions?
+sending all the info to a same server. ex streaming 5 hr long video then it should be gone to the same single server.
+
+https://www.youtube.com/watch?v=bCS9m5RVPyo
