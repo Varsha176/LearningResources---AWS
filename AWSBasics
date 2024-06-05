@@ -38,5 +38,19 @@ used for infra provisioning using functions rather than manual.
 https://www.youtube.com/watch?v=97q30JjEq9Y
 
 
+********************************************************************************************************************************************************
+1) What is a port?
+Ports are virtual places within an operating system where network connections start and end.
+
+Windows -- RDP
+LINUX -- SSH (Secure shell)
+
+2) Mandatory information to connect with ec2?
+1- UserName
+2- DNS Or IP address
+3- pem file or ppk file
+
+3) When machines are in the same network then we use private ip and in different network we use public ip.
+
 
 
