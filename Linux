@@ -1,0 +1,43 @@
+User --> shell -->os(kernel) -->hw
+
+Directory of linux
+*******************
+1-Root --root user
+2- home --any user except root user
+3- boot --bootable files
+4-- etc --configuration files
+5-- usr --packages(software) 
+6- bin -- bin commands can be run by any user
+7- sbin -- sbin commands can only be run by root user.
+
+Linux commands
+*******************
+1) HOW TO CREATE Files in Linux?
+Ans) Using Cat, touch, nano, vi/vim commands.
+*******************
+cat command
+*******************
+1. Cat > filename -- create a new file, ctrl+d (to exit)
+2. cat >> filename -- append new content to existing file 
+3. cat filename -- describe file content
+
+*******************
+touch & nano command
+*******************
+1. touch filename1,fname 2 -- create empty files
+2. nano filename -- create file , ctrl+x (to exit)
+
+*******************
+vi command
+*******************
+vi filename -- open read only file(command mode),to enter content press (i)(insert mode), add content and to save and exit press (esc and :)then wq!
+*******************
+Other commands
+*******************
+ls -l (to show all the details)
+ls -a to show all including hidden files
+mkdir -p dir1/dir2/dir3 -- to create nested directories
+mv source destination -- cut & paste
+rm -rf filename -to delete everything
+tree to see the tree structure
+
