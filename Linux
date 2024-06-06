@@ -30,7 +30,7 @@ touch & nano command
 *******************
 vi command
 *******************
-vi filename -- open read only file(command mode),to enter content press (i)(insert mode), add content and to save and exit press (esc and :)then wq!
+vi filename -- open read-only file(command mode), enter content press (i)(insert mode), add content and to save and exit press (esc and :)then wq!
 *******************
 Other commands
 *******************
@@ -40,4 +40,26 @@ mkdir -p dir1/dir2/dir3 -- to create nested directories
 mv source destination -- cut & paste
 rm -rf filename -to delete everything
 tree to see the tree structure
+grep keyword path (to search content in a file)
+head filename --show by default the top 10 lines of the entire file
+head -3 filename --show by default the top 3 lines of the entire file
+sort filename -- rearrange file content
 
+*******************
+Network commands
+*******************
+hostname
+ifconfig(mac),ipconfig(windows)
+hostname -i
+cat /etc/os-release (OS related information)
+cat proc/meminfo (memory information)
+cat proc/cpuinfo (CPU information)
+
+*******************
+Yum commands
+*******************
+yum install packagename -y 
+yum update packagename
+yum remove package-name
+yum list installed | grep tree* (to see all the installed packages)(| is used when o/p of first command is i/p of second command)
+which packagename (to see location of installed package)
