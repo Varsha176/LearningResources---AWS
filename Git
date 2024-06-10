@@ -1,0 +1,29 @@
+Create an empty repo, git init to initialize the repo. git add ., git commit -m "commit message".
+git is divided into workspace, staging area, local repo and global repo.
+when we create a new file its into workspace, when we do git add then it goes into staging area. after doing git commit, snapshot is saved into our local repo.
+to connect our local rep to central repo we use "git remote add origin reponame"
+** git remote -v (to check the origin)
+** git branch -m main (renaming current branch as main)
+** git push origin main
+** git log (to see commits)
+*******************************************gitignore**************************************
+create .gitignore file, add it and commit it.
+q- if i have 100 .txt files and 100 .class files but i only want to change and commit .text files ?
+open .gitignore file and add *.class then save it and do add and commit. Now only .text files will be updated and commited. .class files will be ignored.
+*******************************************git branching**************************************
+When we create new branch then all the files and commit history also copied to the new branch.
+
+git branch "branchname"
+git checkout "branchname"
+
+when we create a file in workspace it is visible to all the branches untill it is comitted to specific branch.
+
+to merge first switch to main branch the use git merge "branchname"
+then push the merged code.
+
+git reset filename, git reset . ---to delete snapshot(to revert the changes from staging area to workspace) 
+
+difference between git reset and git revert?
+git reset works before git commit (when file is addede to staging area using git add command but not commited to local remo using git commit command)
+git revert works after git commit (when file is commited to local repo using git commit )
+git revert commit-id delete data from staging area as well as workspace and provide new commit-id,hence use it with caution.
