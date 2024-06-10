@@ -63,3 +63,29 @@ yum update packagename
 yum remove package-name
 yum list installed | grep tree* (to see all the installed packages)(| is used when o/p of first command is i/p of second command)
 which packagename (to see location of installed package)
+
+sudo su vs sudo su - 
+sudo su (user will become root user but will be in home directory)
+sudo su - (user will become root user and will be in root directory)
+find -type f (to see all files including hidden files)
+find -type d(to see all directories including hidden directories)
+
+*******************
+create users, groups
+*******************
+useradd user --user info will be stored in /etc/password
+groupadd devops --user info will be stored in /etc/group
+** whenever new user is created then a group will also created by default, vice versa is not possible.
+gpasswd - a username groupname (to add a user to a group )
+gpasswd - d username groupname (to delete a user from a group)
+userdel username (delete user)
+
+*******************
+tar and gzip
+*******************
+tar -cvf dirname.tar dirname
+gzip dirname.tar 
+
+to untar 
+tar -xvf dirname.tar
+tar -xvzf dirname.tar.gz (to unzip and tar together)
