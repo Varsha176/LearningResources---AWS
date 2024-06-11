@@ -22,8 +22,14 @@ to merge first switch to main branch the use git merge "branchname"
 then push the merged code.
 
 git reset filename, git reset . ---to delete snapshot(to revert the changes from staging area to workspace) 
-
+*******************************************git commands*********************************************
 difference between git reset and git revert?
 git reset works before git commit (when file is addede to staging area using git add command but not commited to local remo using git commit command)
 git revert works after git commit (when file is commited to local repo using git commit )
 git revert commit-id delete data from staging area as well as workspace and provide new commit-id,hence use it with caution.
+touch file{1..10} --creates 10 files
+git clean -n (ask for removal of untracked files)
+git clean -f (forcefully remove all untracked files)
+git log --oneline (to see commits)
+git show commit-id 
+git push origin frombranch:tobranch
