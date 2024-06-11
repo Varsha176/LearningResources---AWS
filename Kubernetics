@@ -82,4 +82,11 @@ kubectl create deploment name --image = imagename
 kubectl rollout deployment deployment name
 kubectl scale deployment name --replicas=5
 
+******************************************************************
+What is init container?
+An init container is a special type of container in Kubernetes that runs and completes its tasks before the main containers in a Pod start running. Init containers are used to perform setup, initialization, or configuration tasks required by the main application containers.
+
+https://www.turing.com/interview-questions/kubernetes
+https://www.edureka.co/blog/interview-questions/kubernetes-interview-questions/
+https://medium.com/@ajitfawade/cracking-kubernetes-mastering-key-concepts-and-top-interview-questions-1400e96dfced
 
