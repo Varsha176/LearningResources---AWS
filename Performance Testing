@@ -1,0 +1,21 @@
+1. What is performance testing?
+non functional type of testing that verifies the speed, stability and scalability of the application.
+
+2. what is response time/elapsed time?
+Latency + processing time 
+
+3. what is latency time?
+
+4. what is connect time?
+
+5. what is throughput?
+
+6. what is performance thresholds?
+
+performance testing types
+1-Load testing (under expected load)
+2- Stress testing ()
+3- endurence testing (for stability) -- done to check if system can sustain continuous expected load for a long duration, also known as soak testing.
+4- spike testing --analyse the behaviour of app under sudden/unexpected load.
+5- volume testing - is performed by feedin the app with high volume of data.
+
