@@ -6,11 +6,11 @@ to connect our local rep to central repo we use "git remote add origin reponame"
 ** git branch -m main (renaming current branch as main)
 ** git push origin main
 ** git log (to see commits)
-*******************************************gitignore**************************************
+*******************************************gitignore************************************************************************************
 create .gitignore file, add it and commit it.
 q- if i have 100 .txt files and 100 .class files but i only want to change and commit .text files ?
 open .gitignore file and add *.class then save it and do add and commit. Now only .text files will be updated and commited. .class files will be ignored.
-*******************************************git branching**************************************
+*******************************************git branching************************************************************************************
 When we create new branch then all the files and commit history also copied to the new branch.
 
 git branch "branchname"
@@ -22,7 +22,7 @@ to merge first switch to main branch the use git merge "branchname"
 then push the merged code.
 
 git reset filename, git reset . ---to delete snapshot(to revert the changes from staging area to workspace) 
-*******************************************git commands*********************************************
+*******************************************git commands*******************************************************************************************
 difference between git reset and git revert?
 git reset works before git commit (when file is addede to staging area using git add command but not commited to local remo using git commit command)
 git revert works after git commit (when file is commited to local repo using git commit )
@@ -33,3 +33,23 @@ git clean -f (forcefully remove all untracked files)
 git log --oneline (to see commits)
 git show commit-id 
 git push origin frombranch:tobranch
+**************************************************************************************************************************************
+2 ways to connect local re[o with central repo.
+1. by HTTP (through credentials)
+2. BY SSH
+for connecting with ssh--
+1.first type ssh-keygen in your machine or ec2 instance.
+2.ls -a
+3.cd .ssh
+4.ls
+5. cat id_rsa.pub
+6. cat id_rsa
+7. copy pub file token and go to github , open settings and ssh and add new ssh key, paste this token and save.
+8 to push or pull now follow ssh commands instead of http as repo is now authenticated with ssh key.
+********************************** Common Git Questions *************************
+1. what are the git stages and their purpose?
+2. what is snapshot?
+3. git workflow?
+4. git stash ?
+
+
