@@ -1,34 +1,47 @@
 official doc
-https://docs.docker.com/get-started/overview/ (very Good)
+https://docs.docker.com/get-started/overview/ (Very Good)
 https://www.youtube.com/watch?v=wHy0JNwrB9k&list=PL0tP8lerTbX20wQ4IVD7xTZKef_pYM6lR&index=4
 https://www.youtube.com/watch?v=31k6AtW-b3Y
 https://www.youtube.com/playlist?list=PL0hSJrxggIQoKLETBSmgbbvE4FO_eEgoB(for deep understanding)
 
 1. What is Docker?
 Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
-With Docker, you can manage your infrastructure in the same ways you manage your applications.
+the docker container has both the application code and its environment, including libraries, system tools, and runtime. Using Docker, you can deploy and scale applications on any machine and ensure your code runs consistently.
 
-2. What is docker registery?
+2. What is a docker registry?
 A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker looks for images on Docker Hub by default.
 
-3. Docker contains docker deamon(responsible for all the works) and docker client. Docker desktop contain both deamon and client.
+3. Docker contains a docker daemon (responsible for all the work) and a docker client. Docker Desktop contains both daemon and client.
 4. Docker architecture
 uses client-server architecture.
 The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface
 
-5. What is docker image
+5. What is the docker image
 An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization
 
 6. why images are lightweight in nature?
 To build your own image, you create a Dockerfile with a simple syntax for defining the steps needed to create the image and run it. Each instruction in a Dockerfile creates a layer in the image.
-When you change the Dockerfile and rebuild the image, only those layers which have changed are rebuilt.
+When you change the Dockerfile and rebuild the image, only those layers that have changed are rebuilt.
 
-7. What is container?
+7. What is a container?
 A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.
+
+8. what is docker networking?
+Containers have networking enabled by default, and they can make outgoing connections. We can create custom networks as well. By default network is bridge.
+
+docker network ls (to see available networks)
+
+9. why create custom networks?
+You can create custom, user-defined networks, and connect multiple containers to the same network. Once connected to a user-defined network, containers can communicate with each other using container IP addresses or container names. 
+
+10. what is docker volume?
+When we delete a container then its data/memory is also deleted. To prevent this we use docker volume.
 
 https://cloudchamp.notion.site/How-to-Install-Docker-on-Ubuntu-20-f6cda544c64f44ccb83443f8204b098e (follow this for installation)
 
-
+11. Docker vs Virtual machines
+Virtual machines were originally designed to allow multiple operating systems to run on a single physical machine. The objective is to allow users to create a virtual environment that’s isolated from the underlying hardware.
+Docker lets you run an application on any operating system. Docker containers host on a single physical server with a host OS, which shares among them. Sharing the host OS between containers makes them light and increases the boot time
 *******************************Docker commands******************************
 docker container create imagename (to create container from image)
 
@@ -49,19 +62,10 @@ how to create container from this docker image
 docker run -d -p 8000:8000 nodeproject-docker (in detached mode)
 
 
-8. what is docker networking?
-Containers have networking enabled by default, and they can make outgoing connections. We can create custom networks as well. By default network is bridge.
 
-docker network ls (to see available networks)
-
-9.why to create custome networks?
-You can create custom, user-defined networks, and connect multiple containers to the same network. Once connected to a user-defined network, containers can communicate with each other using container IP addresses or container names. 
-
-10. what is docker volume?
-When we delete a container then its data/memory also deleted.Tp prevent this we use docker volume.
 
 
 dockerfile ---> docker image --->conatiner1,container 2....
 
-how to resolve permission error in docker?
+how to resolve permission errors in docker?
 sudo chown $USER /var/run/docker.sock
