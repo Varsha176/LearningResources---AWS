@@ -41,23 +41,38 @@ https://cloudchamp.notion.site/How-to-Install-Docker-on-Ubuntu-20-f6cda544c64f44
 
 11. Docker vs Virtual machines
 Virtual machines were originally designed to allow multiple operating systems to run on a single physical machine. The objective is to allow users to create a virtual environment that’s isolated from the underlying hardware.
-Docker lets you run an application on any operating system. Docker containers host on a single physical server with a host OS, which shares among them. Sharing the host OS between containers makes them light and increases the boot time
-*******************************Docker commands******************************
-docker container create imagename (to create container from image)
+Docker lets you run an application on any operating system. Docker containers host on a single physical server with a host OS, which shares among them. Sharing the host OS between containers makes them light and increases the boot time.
 
+*******************************Docker commands******************************************************************************************
+
+yum install docker -y (to install docker)
+service docker start
+******************************* pull & create *******************************
+docker pull imagename
 docker run -it imagename (pull the image if not already present)
+docker run -it ubuntu bin/bash (pull the image and start a container from the image)
 docker images (show images)
-docker container ls (show containers)
-docker container ls -a (show all containers even the stopped one)
+docker search imagename (to search images)
+
+******************************* containers *******************************
+
+docker container create imagename (to create a container from image)
+docker container ls/docker ps (show containers)
+docker container ls -a/docker ps -a (show all containers even the stopped one)
 docker start containername
 docker stop containername
+docker tm containername (to remove container)
+docker rename container containername
+docker attach containernameorId (to go inside container) 
 docker exec -it containername bash (to attach the container with the terminal), ctrl+d to exit
 docker run -it -p localport:instanceport imagename (for port mapping)
 docker container prune(remove all stopped containers)
+docker commit containername containerimage (to create image from a container)
 
-how to create a docker image?
+*********************************************************************************************
+how to create a docker image using Dockerfile?
 1.create a docker file inside the project 
-2. docker build -t yourimagename .
+2. docker build -t yourimagename . (. shows current directory)
 how to create container from this docker image
 docker run -d -p 8000:8000 nodeproject-docker (in detached mode)
 
