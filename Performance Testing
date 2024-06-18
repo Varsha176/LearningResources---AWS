@@ -6,10 +6,15 @@ Latency + processing time
 
 3. what is latency time?
 latency = time to first byte
+Latency refers to the number of milliseconds between the time JMeter sent the request and when an initial response was received
 
 4. what is connect time?
+Connect time is the time taken by JMeter to establish connect with the Server including SSL handshake.
+Load Time is the time it took JMeter to receive the complete response from the server.
 
 5. what is throughput?
+Throughput is the number of transactions a system can handle in a given time period.
+a network with high throughput and low latency is responsive and efficient
 
 6. what is performance thresholds?
 
