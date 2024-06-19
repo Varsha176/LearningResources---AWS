@@ -103,5 +103,50 @@ Grafana interview questions
 https://mindmajix.com/grafana-interview-questions
 https://www.devopsschool.com/blog/top-50-grafana-interview-questions-and-answers/
 
+What to measure?
+latency, traffic, errors and saturation (4 golden signals)
+monitoring is done to check availability, resource utilization and performance check
 
+4 essential telemetry types
+MELT
+METRICS, EVENTS,LOGS, TRACES
+
+************************************************************************
+What is Dynatrace?
+Dynatrace is both an Application Performance Monitoring and Application Management tool. Dyntrace provides monitoring and tracing end to end from the browser to containers to the mainframe.
+It has Real User Monitoring, Synthetic Monitoring, code level monitoring and cloud and infrastructure monitoring.
+
+How is it different from Prometheus?
+Dynatrace OneAgent discovers all processes running on the host, no need to install multiple agents for multiple targets.
+Auto-discovers and maps entire topology continuously.
+
+What is oneagent?
+One agent is a binary file that is configured specifically to collect metrics on the various aspects of the host including OS, HW, Processes etc.
+
+Real User Monitoring: tracks performance data from real users accessing your website or application.RUM is implemented by adding Javascript tags to the application code. It gathers data for different performance metrics, such as how long a page takes to load or performance bottlenecks.
+Synthetic Monitoring: gathers performance data using agents that simulate real users. Gather performance data in a pre-production environment in the absence of real user traffic. Can set Benchmark your service against competitors.
+code level monitoring: It allows us to track crucial metrics such as response times, resource utilization, error rates, and transaction performance
+cloud and infrastructure monitoring: Using cloud-monitoring tools, organizations can proactively monitor the availability, performance, and security of their cloud environments to find and fix problems before they impact the end-user experience.
+
+
+What is Open Telemetry?
+OpenTelemetry is an Observability framework and toolkit designed to create and manage telemetry data such as traces, metrics, and logs.
+OpenTelemetry consists of open-source tools, APIs, and SDKs that can be implemented with a variety of programming languages, including Go, Java, and Python.
+These tools work together to specify what needs to be measured, gather the relevant data, clean and organize the information, and export it in the appropriate formats to a monitoring backend
+
+Alerting in Dynatrace?
+You can also set up alert-filtering rules that are based on the severity, customer impact, associated tags, and/or duration of detected problems.
+Dynatrace enables you to automatically push problem notifications to your preferred third-party incident management or ChatOps service.
+
+What are Distributed traces
+Distributed tracing is an essential monitoring, debugging, and optimizing tool with the help of which we can visualise how different services are connected and how your requests travel through various tiers of an application.
+it helps teams to quickly understand the performance of each microservice.
+
+what are traces?
+A trace represents the whole journey of a request or an action as it moves through all the nodes of a distributed system, especially containerized applications or microservices architectures. 
+Traces let you profile and observe systems, making it easy to discover bottlenecks and interconnection issues.
+
+A trace can be visualized to give a graphic representation of how long it takes for each step in the data flow pathway to complete. It can show where new requests are initiated and end, and how your system responds. 
+
+https://grafana.com/docs/tempo/latest/traces/
 
